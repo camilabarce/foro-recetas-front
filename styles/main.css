@@ -2,11 +2,12 @@
 
 * {
     box-sizing: border-box;
+    font-family: var(--font-family);
 }
 
-
-
 :root {
-    --color-primary: ;
-    --color-secondary: ;
+    --color: ;
+    --border-radius: 1rem;
+    --padding: 1rem;
+    --font-family: 'Montserrat';
 }
