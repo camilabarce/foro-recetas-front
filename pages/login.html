@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="vh-100 gradient-custom">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+            <!-- Tabs navs -->
+            <div class="card bg-dark text-white" style="border-radius: 1rem">
+              <div class="card-body p-5 text-center">
+                <div class="mb-md-5 mt-md-4 pb-5">
+                  <ul class="nav nav-tabs mb-4" id="loginTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="signIn-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#signIn"
+                        type="button"
+                        role="tab"
+                        aria-controls="signIn"
+                        aria-selected="true"
+                      >
+                        Iniciar Sesión
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="signUp-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#signUp"
+                        type="button"
+                        role="tab"
+                        aria-controls="signUp"
+                        aria-selected="false"
+                      >
+                        Registrarse
+                      </button>
+                    </li>
+                  </ul>
+
+                  <!-- Tabs content -->
+                  <div class="tab-content" id="loginTabsContent">
+                    <!-- Sign In Tab -->
+                    <div
+                      class="tab-pane fade show active"
+                      id="signIn"
+                      role="tabpanel"
+                      aria-labelledby="signIn-tab"
+                    >
+                      <form id="signInForm" class="mb-3">
+                        <div class="mb-3">
+                          <label for="usernameSignIn" class="form-label"
+                            >Usuario</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="usernameSignIn"
+                            name="username"
+                            placeholder="Ingresar su nombre de usuario"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="passwordSignIn" class="form-label"
+                            >Contraseña</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="passwordSignIn"
+                            name="password"
+                            placeholder="Ingresar su contraseña"
+                            required
+                          />
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                          Iniciar sesión
+                        </button>
+                      </form>
+                    </div>
+                    <!-- Sign Up Tab -->
+                    <div
+                      class="tab-pane fade"
+                      id="signUp"
+                      role="tabpanel"
+                      aria-labelledby="signUp-tab"
+                    >
+                      <form id="signUpForm" class="mb-3">
+                        <div class="mb-3">
+                          <label for="usernameSignUp" class="form-label"
+                            >Nombre de usuario</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="usernameSignUp"
+                            name="username"
+                            placeholder="Nombre de usuario"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="emailSignUp" class="form-label"
+                            >Correo electrónico</label
+                          >
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="emailSignUp"
+                            name="email"
+                            placeholder="Correo electrónico"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="passwordSignUp" class="form-label"
+                            >Contraseña</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="passwordSignUp"
+                            name="password"
+                            placeholder="Contraseña"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="password2SignUp" class="form-label"
+                            >Repetir contraseña</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="password2SignUp"
+                            name="password2"
+                            placeholder="Repetir contraseña"
+                            required
+                          />
+                        </div>
+                        <button type="submit" class="btn btn-success">
+                          Registrarse
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const signInForm = document.getElementById("signInForm");
+        const signUpForm = document.getElementById("signUpForm");
+
+        signInForm.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const formData = new FormData(signInForm);
+          const loginRequest = {
+            username: formData.get("username"),
+            password: formData.get("password"),
+          };
+          try {
+            const response = await fetch("your-login-endpoint", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(loginRequest),
+            });
+            const data = await response.json();
+            localStorage.setItem("token", "Bearer " + data.token);
+            window.location.href = "/";
+          } catch (error) {
+            console.log("No se pudo logear. Error: " + error);
+          }
+        });
+
+        signUpForm.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const formData = new FormData(signUpForm);
+          const registerRequest = {
+            username: formData.get("username"),
+            email: formData.get("email"),
+            password: formData.get("password"),
+            password2: formData.get("password2"),
+            role: null,
+          };
+          try {
+            const response = await fetch("your-register-endpoint", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(registerRequest),
+            });
+            const data = await response.json();
+            localStorage.setItem("token", "Bearer " + data.token);
+            window.location.href = "/";
+          } catch (error) {
+            console.log("No se pudo registrar. Error: " + error);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
