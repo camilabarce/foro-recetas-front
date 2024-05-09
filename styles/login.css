@@ -9,6 +9,9 @@ body {
   text-indent: 0.5rem;
 }
 
+.text-orange {
+  color: rgb(255, 134, 69);
+}
 /* add password hide and show icon */
 
 .password__icon {
