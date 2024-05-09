@@ -18,14 +18,8 @@ body {
   cursor: pointer;
 }
 
-/* backgroun grey */
-
-.bg-grey-light {
-  background: #f0f0f0;
-}
-
-.bg-grey-light:focus {
-  background: #f0f0f0;
+.logo.active {
+  color: rgb(255, 118, 45);
 }
 
 @media (min-width: 1024px) {
@@ -97,6 +91,7 @@ body {
   height: 100vh;
   margin-left: -100%;
   opacity: 0;
+  color: white;
   transition: margin 1s, opacity 0.5s;
   z-index: 1;
 }
@@ -116,6 +111,7 @@ body {
   height: 100vh;
   margin-left: -100%;
   opacity: 0;
+  color: white;
   transition: margin 1s, opacity 0.5s;
   z-index: 1;
 }
