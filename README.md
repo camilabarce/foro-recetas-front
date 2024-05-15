@@ -1,4 +1,4 @@
-# Foro de comidas
+# Foro de Recetas
 
 ## Tecnologías
 

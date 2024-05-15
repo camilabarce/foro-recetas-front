@@ -1,4 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 @import url('reset.css');
+@import url('login.css');
+@import url('categorias.css');
+@import url('contacto.css');
 
 * {
     box-sizing: border-box;
@@ -8,13 +12,15 @@
 :root {
     --azul: #262d34;
     --azul-oscuro: #1e252b;
+    --naranja: #ff7e3a;
     --border-radius: 1rem;
     --padding: 1rem;
-    --font-family: Montserrat;
+    --font-family: "Poppins", sans-serif;
 }
 
-body {
-    display: flexbox;
+/* nav */
+#search-bar::placeholder {
+    color: #ffffff; 
 }
 
 .navbar {
