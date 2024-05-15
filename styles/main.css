@@ -2,6 +2,7 @@
 @import url('reset.css');
 @import url('login.css');
 @import url('categorias.css');
+@import url('nav.css');
 @import url('contacto.css');
 
 * {
@@ -12,59 +13,14 @@
 :root {
     --azul: #262d34;
     --azul-oscuro: #1e252b;
+    --gris: #212429;
     --naranja: #ff7e3a;
     --border-radius: 1rem;
     --padding: 1rem;
     --font-family: "Poppins", sans-serif;
-}
-
-/* nav */
-#search-bar::placeholder {
-    color: #ffffff; 
-}
-
-.navbar {
-    justify-content: space-between
-}
-
-.navbar-brand{
-    background-color: whitesmoke;
-}
-
-.boton-elegante {
-    padding: 15px 30px;
-    border: 2px solid #2c2c2c;
-    background-color: #1a1a1a;
-    color: #ffffff;
-    font-size: 1.2rem;
-    cursor: pointer;
-    border-radius: 30px;
-    transition: all 0.4s ease;
-    outline: none;
-    position: relative;
-    overflow: hidden;
-    font-weight: bold;
-}
-
-.boton-elegante::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle,
-            rgba(255, 255, 255, 0.25) 0%,
-            rgba(255, 255, 255, 0) 70%);
-    transform: scale(0);
-    transition: transform 0.5s ease;
-}
-
-.boton-elegante:hover::after {
-    transform: scale(4);
-}
-
-.boton-elegante:hover {
-    border-color: #666666;
-    background: #292929;
+    --color-hover: var(--naranja);
+    --transition: all 0.2s ease;
+    --color-white: #f6f6f6;
+    --color-black: #000;
+    --color-bg: #e2e2e2;
 }
