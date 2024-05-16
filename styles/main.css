@@ -24,6 +24,9 @@
     --color-bg: #e2e2e2;
 }
 
+#home {
+    background-color: var(--gris);
+}
 
 /* Estilos para el banner */
 .banner {
