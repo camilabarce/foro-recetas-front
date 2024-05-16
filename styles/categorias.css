@@ -310,6 +310,7 @@ ol, ul {
     .home{
         left: 0;
         width: 100%;
+        height: calc(100vh - 15%);
     }
 
     #bottom-bar {
