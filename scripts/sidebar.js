@@ -14,9 +14,6 @@ function changebtn() {
     }
 }
 
-window.addEventListener("load", checkScreenWidth);
-window.addEventListener("resize", checkScreenWidth);
-
 function checkScreenWidth() {
     if (window.innerWidth <= 768) { // Cambia el valor 768 según lo desees
         side_bar.classList.remove("expand");
@@ -24,3 +21,6 @@ function checkScreenWidth() {
         side_bar.classList.add("expand");
     }
 }
+
+window.addEventListener("load", checkScreenWidth);
+window.addEventListener("resize", checkScreenWidth);

@@ -20,9 +20,49 @@
       <a href="./posts/new-post.html" class="custom-button">Nuevo Post</a>
       <a href="./pages/login.html" class="custom-button">Acceder</a>
     </nav>
+    <nav id="bottom-bar">
+      <ul class="d-flex justify-content-between">
+        <li>
+          <a href="#" class="d-flex gap-2 flex-column text-decoration-none text-center">
+            <i class="bx bx-category"></i>
+            <span class="title font">Categorías</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="d-flex gap-2 flex-column text-center">
+            <i class="bx bx-search search-btn"></i>
+            <!-- <input type="text" placeholder="Buscar..."/> -->
+            <span class="title">Buscar</span>
+          </div>
+        </li>
+
+        <li>
+          <a href="./index.html" class="d-flex gap-2 flex-column text-decoration-none text-center">
+            <i class="bx bx-home-alt-2"></i>
+            <span class="title">Inicio</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="d-flex gap-2 flex-column text-decoration-none text-center">
+            <i class="bx bx-bookmark"></i>
+            <span class="title">Guardados</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="./pages/contacto.html" class="d-flex gap-2 flex-column text-decoration-none text-center">
+            <i class="bx bx-envelope"></i>
+            <span class="title">Contacto</span>
+          </a>
+        </li>
+        
+      </ul>
+    </nav>
   </header>
   <main>
-    <section class="sidebar expand dark-mode">
+    <section id="sidebar" class="sidebar expand dark-mode">
       <div class="nav-header">
         <p class="logo">ForoRecetas</p>
         <i class="bx bx-menu-alt-right btn-menu"></i>
@@ -34,36 +74,35 @@
           <span class="tooltip">Buscar</span>
         </li>
         <li>
-          <a href="./index.html">
+          <a href="./index.html" class="d-flex gap-2">
             <i class="bx bx-home-alt-2"></i>
             <span class="title">Inicio</span>
           </a>
           <span class="tooltip">Inicio</span>
         </li>
-        <li class="mt-2">
-          <!-- Titulo Categorias -->
-          <a href="#">
+        <li>
+          <a href="#" class="d-flex gap-2">
             <i class="bx bx-category"></i>
-            <span class="title">Categorias</span>
+            <span class="title">Categorías</span>
           </a>
-          <span class="tooltip">Categorias</span>
+          <span class="tooltip">Categorías</span>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="d-flex gap-2">
             <i class="bx bx-bookmark"></i>
             <span class="title">Guardados</span>
           </a>
           <span class="tooltip">Guardados</span>
         </li>
         <li>
-          <a href="#">
+          <a href="#" class="d-flex gap-2">
             <i class="bx bx-info-circle"></i>
             <span class="title">Sobre nosotros</span>
           </a>
           <span class="tooltip">Sobre nosotros</span>
         </li>
         <li>
-          <a href="./pages/contacto.html">
+          <a href="./pages/contacto.html" class="d-flex gap-2">
             <i class="bx bx-envelope"></i>
             <span class="title">Contacto</span>
           </a>

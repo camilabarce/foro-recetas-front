@@ -2,107 +2,144 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
-    <link rel="stylesheet" href="../styles/main.css" />
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <!-- iconos -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+  <!-- iconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <main>
-        <section class="sidebar expand dark-mode">
-            <div class="nav-header">
-                <h3 class="logo">ForoRecetas</h3>
-                <i class="bx bx-menu-alt-right btn-menu"></i>
-            </div>
-            <ul class="nav-links">
-                <li>
-                    <i class="bx bx-search search-btn"></i>
-                    <input type="text" placeholder="Buscar..." />
-                    <span class="tooltip">Buscar</span>
-                </li>
-                <li>
-                    <a href="../index.html">
-                        <i class="bx bx-home-alt-2"></i>
-                        <span class="title">Inicio</span>
-                    </a>
-                    <span class="tooltip">Inicio</span>
-                </li>
-                <li class="mt-2">
-                    <a href="#">
-                        <i class="bx bx-category"></i>
-                        <span class="title">Categorias</span>
-                    </a>
-                    <span class="tooltip">Categorias</span>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bx bx-bookmark"></i>
-                        <span class="title">Guardados</span>
-                    </a>
-                    <span class="tooltip">Guardados</span>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="bx bx-info-circle"></i>
-                        <span class="title">Sobre nosotros</span>
-                    </a>
-                    <span class="tooltip">Sobre nosotros</span>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">
-                        <i class="bx bx-envelope"></i>
-                        <span class="title">Contacto</span>
-                    </a>
-                    <span class="tooltip">Contacto</span>
-                </li>
-            </ul>
-        </section>
-        <section class="home d-flex justify-content-center align-items-center flex-column" id="contact">
-            <div class="formContainer d-flex flex-column p-4">
-                <h2 class="text-light text-center">Contacto</h2>
-                <form class="formulario" action="">
-                    <div class="inputContainer">
-                        <input class="input" id="nombre" type="text" name="Nombre" placeholder="a" required>
-                        <label class="label" for="nombre">Nombre</label>
-                    </div>
-                    <div class="inputContainer">
-                        <input class="input" id="correo" type="email" name="Correo" placeholder="a" required>
-                        <label class="label" for="correo">Correo</label>
-                    </div>
-                    <div class="inputContainer">
-                        <input class="input" id="asunto" type="text" name="Asunto" placeholder="a" required>
-                        <label class="label" for="asunto">Asunto</label>
-                    </div>
-                    <div id="textAreaContainer" class="inputContainer">
-                        <textarea class="input textarea" id="mensaje" name="Mensaje" placeholder="a"
-                            required></textarea>
-                        <label class="label" for="mensaje">Mensaje</label>
-                    </div>
+  <nav id="bottom-bar">
+    <ul class="d-flex justify-content-between">
+      <li>
+        <a href="#" class="d-flex gap-2 flex-column text-decoration-none text-center">
+          <i class="bx bx-category"></i>
+          <span class="title font">Categorías</span>
+        </a>
+      </li>
 
-                    <div class="botonContainer">
-                        <input type="submit" class="enviarBtn" value="Enviar">
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-    <script src="../scripts/sidebar.js"></script>
+      <li>
+        <div class="d-flex gap-2 flex-column text-center">
+          <i class="bx bx-search search-btn"></i>
+          <!-- <input type="text" placeholder="Buscar..."/> -->
+          <span class="title">Buscar</span>
+        </div>
+      </li>
+
+      <li>
+        <a href="../index.html" class="d-flex gap-2 flex-column text-decoration-none text-center">
+          <i class="bx bx-home-alt-2"></i>
+          <span class="title">Inicio</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="d-flex gap-2 flex-column text-decoration-none text-center">
+          <i class="bx bx-bookmark"></i>
+          <span class="title">Guardados</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#" class="d-flex gap-2 flex-column text-decoration-none text-center">
+          <i class="bx bx-envelope"></i>
+          <span class="title">Contacto</span>
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+  <main id="main">
+    <section id="sidebar" class="sidebar expand dark-mode">
+      <div class="nav-header">
+        <h3 class="logo">ForoRecetas</h3>
+        <i class="bx bx-menu-alt-right btn-menu"></i>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <i class="bx bx-search search-btn"></i>
+          <input type="text" placeholder="Buscar..." />
+          <span class="tooltip">Buscar</span>
+        </li>
+        <li>
+          <a href="../index.html">
+            <i class="bx bx-home-alt-2"></i>
+            <span class="title">Inicio</span>
+          </a>
+          <span class="tooltip">Inicio</span>
+        </li>
+        <li class="mt-2">
+          <a href="#">
+            <i class="bx bx-category"></i>
+            <span class="title">Categorias</span>
+          </a>
+          <span class="tooltip">Categorias</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-bookmark"></i>
+            <span class="title">Guardados</span>
+          </a>
+          <span class="tooltip">Guardados</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-info-circle"></i>
+            <span class="title">Sobre nosotros</span>
+          </a>
+          <span class="tooltip">Sobre nosotros</span>
+        </li>
+        <li>
+          <a href="../pages/contacto.html">
+            <i class="bx bx-envelope"></i>
+            <span class="title">Contacto</span>
+          </a>
+          <span class="tooltip">Contacto</span>
+        </li>
+      </ul>
+    </section>
+    <section class="home" id="contact">
+      <div class="formContainer p-4">
+        <h2 class="text-light text-center">Contacto</h2>
+        <form class="formulario" action="">
+          <div class="inputContainer">
+            <input class="input" id="nombre" type="text" name="Nombre" placeholder="a" required>
+            <label class="label" for="nombre">Nombre</label>
+          </div>
+          <div class="inputContainer">
+            <input class="input" id="correo" type="email" name="Correo" placeholder="a" required>
+            <label class="label" for="correo">Correo</label>
+          </div>
+          <div class="inputContainer">
+            <input class="input" id="asunto" type="text" name="Asunto" placeholder="a" required>
+            <label class="label" for="asunto">Asunto</label>
+          </div>
+          <div id="textAreaContainer" class="inputContainer">
+            <textarea class="input textarea" id="mensaje" name="Mensaje" placeholder="a" required></textarea>
+            <label class="label" for="mensaje">Mensaje</label>
+          </div>
+
+          <div class="botonContainer">
+            <input type="submit" class="enviarBtn" value="Enviar">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+  <script src="../scripts/sidebar.js"></script>
 </body>
 
 </html>

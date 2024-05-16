@@ -1,0 +1,9 @@
+/* Estilos para el banner */
+.banner {
+    width: 100%;
+    /* Reducimos el tamaño del banner */
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
