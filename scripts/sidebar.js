@@ -13,3 +13,14 @@ function changebtn() {
         btn_menu.classList.replace("bx-menu-alt-right", "bx-menu");
     }
 }
+
+window.addEventListener("load", checkScreenWidth);
+window.addEventListener("resize", checkScreenWidth);
+
+function checkScreenWidth() {
+    if (window.innerWidth <= 768) { // Cambia el valor 768 según lo desees
+        side_bar.classList.remove("expand");
+    } else {
+        side_bar.classList.add("expand");
+    }
+}

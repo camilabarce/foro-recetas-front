@@ -9,7 +9,7 @@ ol, ul {
 
 .dark-mode {
     --color-white: #191919;
-    --color-black: #f0f0f0;
+    --color-black: #f6f6f6;
     --color-bg: #212429;
 }
 
@@ -275,4 +275,15 @@ ol, ul {
     display: inline-block;
     margin: 20px;
     white-space: nowrap;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 100px; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .sidebar {
+    }
 }
