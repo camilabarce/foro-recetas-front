@@ -21,62 +21,36 @@
     --color-hover: var(--naranja);
     --transition: all 0.2s ease;
     --color-white: #f6f6f6;
-    --color-black: #000;
     --color-bg: #e2e2e2;
 }
 
- /* Estilos para el banner */
 
-
- .banner {
-    width: 60%; /* Reducimos el tamaño del banner */
-    height: 20%;
+/* Estilos para el banner */
+.banner {
+    width: 100%;
+    /* Reducimos el tamaño del banner */
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-/* Navbar */
-
-
-
-.bg-orange {
-    background-color: #ff7e3a; 
 }
 
-.navbar-brand svg {
-    height: 2rem; 
+#nav {
+    padding-right: 1rem;
 }
-
-.navbar-brand {
-    padding: 0.5rem 1rem; 
-    background-color: whitesmoke;
-}
-
-.navbar-nav .nav-link {
-    padding: 0.5rem 1rem; 
-}
-
-#search-bar::placeholder {
-    color: #ffffff; 
-}
-
-.navbar {
-    justify-content: space-between
-}
-
 
 .custom-button {
-    padding: 10px 20px; 
-    background-color: #000; 
-    color: #fff; 
-    border: none; 
-    border-radius: 20px; 
-    cursor: pointer; 
-    transition: background-color 0.3s, color 0.3s; 
+    padding: 10px 20px;
+    background-color: var(--azul-oscuro);
+    color: #fff;
+    border: .01rem solid var(--color-bg);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
 }
 
 .custom-button:hover {
-    background-color: #fff; 
-    color: #000; 
+    background-color: #fff;
+    color: #000;
 }

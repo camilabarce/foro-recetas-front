@@ -8,8 +8,8 @@ ol, ul {
 }
 
 .dark-mode {
-    --color-white: #000;
-    --color-black: #fff;
+    --color-white: #191919;
+    --color-black: #f0f0f0;
     --color-bg: #212429;
 }
 
