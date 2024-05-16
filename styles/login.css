@@ -82,7 +82,7 @@
   position: absolute;
   width: 100%;
   height: 100vh;
-  margin-left: -100%;
+  margin-left: 100%;
   opacity: 0;
   color: white;
   transition: margin 1s, opacity 0.5s;
