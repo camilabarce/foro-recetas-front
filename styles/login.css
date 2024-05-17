@@ -1,4 +1,4 @@
-/* add padding on input
+/* add padding on input */
 
 .text-indent {
   text-indent: 0.5rem;
@@ -7,7 +7,8 @@
 .text-orange {
   color: rgb(255, 118, 45);
 }
-add password hide and show icon
+
+/* add password hide and show icon */
 
 .password__icon {
   position: absolute;
@@ -24,7 +25,8 @@ add password hide and show icon
   body {
     overflow: hidden;
   }
-  add circle orange background
+
+  /* add circle orange background */
   .ball {
     overflow: hidden;
     transition: margin 1s;
@@ -32,35 +34,41 @@ add password hide and show icon
     height: 31rem;
     background-color: rgb(255, 118, 45);
   }
+
   .ball.login {
     margin-left: 50%;
     margin-top: 5%;
   }
+
   .ball.register {
     margin-left: 14%;
     margin-top: 6%;
   }
-  bouncing effect
+
+  /* bouncing effect */
   .bounce {
     height: 30rem;
     animation: bounce 2s infinite alternate;
     -webkit-animation: bounce 2s infinite alternate;
   }
+
   @keyframes bounce {
     from {
       transform: translateY(-0.5rem);
     }
+
     to {
       transform: translateY(1rem);
     }
   }
 
-  register form active
+  /* register form active */
   .register__form.active {
     margin-left: 50% !important;
     opacity: 1;
   }
-  login form active
+
+  /* login form active */
   .login__form.active {
     opacity: 1;
     margin-left: 10% !important;
@@ -71,12 +79,13 @@ add password hide and show icon
   .container .col-12.p-5 {
     padding: 0px !important;
   }
+
   body {
     overflow-x: hidden;
   }
 }
 
-register default
+/* register default */
 
 .register__form {
   position: absolute;
@@ -89,14 +98,14 @@ register default
   z-index: 1;
 }
 
-register form active
+/* register form active */
 
 .register__form.active {
   margin-left: 0%;
   opacity: 1;
 }
 
-login form default
+/* login form default */
 
 .login__form {
   position: absolute;
@@ -109,9 +118,9 @@ login form default
   z-index: 1;
 }
 
-login form active
+/* login form active */
 
 .login__form.active {
   opacity: 1;
   margin-left: 0%;
-} */
+}
