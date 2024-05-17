@@ -1,84 +1,129 @@
-.form-control {
-    margin: 2rem;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-    width: 400px;
+#contact {
+    background: rgb(25, 25, 25);
+    background: linear-gradient(95deg, rgba(25, 25, 25, 1) 13%, rgba(255, 126, 58, 1) 100%);
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.formContainer {
+    display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 25px;
-    border-radius: 8px;
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.3);
+    width: 60%;
+    height: 80%;
+    border-radius: .5rem;
+    background: rgba(255, 255, 255, 0.04);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5.9px);
-    -webkit-backdrop-filter: blur(5.9px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
 }
 
-.title {
-    font-size: 28px;
-    font-weight: 800;
-}
-
-.input-field {
-    position: relative;
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     width: 100%;
+    margin: 5% 0;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    position: relative;
+    height: 3.5rem;
+    width: 90%;
+    margin-left: 5%;
 }
 
 .input {
-    margin-top: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
+    border: .01rem solid var(--color-white);
+    border-radius: 20px;
+    padding: 0 1rem;
     outline: none;
-    border-radius: 8px;
-    height: 45px;
-    border: 1.5px solid #ecedec;
-    background: transparent;
-    padding-left: 10px;
+    background: none;
+    z-index: 1;
+    color: #b4b4b4;
+}
+
+#textAreaContainer {
+    height: 5rem;
+}
+
+.textarea {
+    padding-top: 5%;
+    resize: none;
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    background-color: #4e3528;
+    color: var(--color-white);
+    transition: 0.4s;
+    z-index: 0;
+}
+
+.enviarBtn {
+    display: block;
+    margin: auto;
+    padding: .5rem 5rem;
+    cursor: pointer;
+    border-radius: 20px;
+    color: var(--color-white);
+    background-color: transparent;
+    border: .01rem solid var(--color-white);
+}
+
+.enviarBtn:hover {
+    background-color: var(--color-white);
+    color: var(--gris);
+    box-shadow: 0 1rem 2rem rgba(47, 46, 43, 0.2);
+}
+
+.input:focus+.label {
+    top: -.5rem;
+    left: .75rem;
+    z-index: 10;
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--naranja);
 }
 
 .input:focus {
-    border: 1.5px solid #2d79f3;
+    border: .01rem solid var(--naranja);
 }
 
-.input-field .label {
-    position: absolute;
-    top: 25px;
-    left: 15px;
-    color: #ccc;
-    transition: all 0.3s ease;
-    pointer-events: none;
-    z-index: 2;
+.input:not(:placeholder-shown)+.label {
+    top: -.5rem;
+    left: .75rem;
+    z-index: 10;
+    font-size: .8rem;
+    font-weight: 500;
 }
 
-.input-field .input:focus~.label,
-.input-field .input:valid~.label {
-    top: 5px;
-    left: 5px;
-    font-size: 12px;
-    color: #2d79f3;
-    background-color: #ffffff;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.submit-btn {
-    margin-top: 30px;
-    height: 55px;
-    background: #f2f2f2;
-    border-radius: 11px;
-    border: 0;
-    outline: none;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 700;
-    background: linear-gradient(180deg, #363636 0%, #1b1b1b 50%, #000000 100%);
-    box-shadow: 0px 0px 0px 0px #ffffff, 0px 0px 0px 0px #000000;
-    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
-    cursor: pointer;
-}
-
-.submit-btn:hover {
-    box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #0000003a;
+@media only screen and (max-width: 480px) {
+    .formContainer {
+        width: 90%;
+        height: 75vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    #contact {
+        align-items: flex-start;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 }

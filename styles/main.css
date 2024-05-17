@@ -3,6 +3,7 @@
 @import url('login.css');
 @import url('categorias.css');
 @import url('nav.css');
+@import url('banner.css');
 @import url('contacto.css');
 
 * {
@@ -24,33 +25,10 @@
     --color-bg: #e2e2e2;
 }
 
+#home {
+    background-color: var(--gris);
+}
 
-/* Estilos para el banner */
-.banner {
-    width: 100%;
-    /* Reducimos el tamaño del banner */
-    height: 90%;
+.cards-wrapper{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#nav {
-    padding-right: 1rem;
-}
-
-.custom-button {
-    padding: 10px 20px;
-    background-color: var(--azul-oscuro);
-    color: #fff;
-    border: .01rem solid var(--color-bg);
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-    text-decoration: none;
-}
-
-.custom-button:hover {
-    background-color: #fff;
-    color: #000;
 }
