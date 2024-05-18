@@ -8,8 +8,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: var(--font-family);
-    
+    font-family: var(--font-family); 
 }
 
 body {
@@ -34,6 +33,9 @@ body {
     background-color: var(--gris);
 }
 
-.cards-wrapper{
-    display: flex;
+.card{
+    width: 18rem;
+}
+.card-img-cont{
+    max-height: 45%;
 }
