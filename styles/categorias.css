@@ -278,7 +278,6 @@ ol, ul {
     color: var(--color-black);
     display: inline-block;
     margin: 20px;
-    /*white-space: nowrap;*/
 }
 
 #bottom-bar {

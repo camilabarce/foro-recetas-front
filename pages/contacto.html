@@ -25,11 +25,10 @@
       </li>
 
       <li>
-        <div class="d-flex gap-2 flex-column text-center">
+        <a href="#" class="d-flex gap-2 flex-column text-decoration-none text-center">
           <i class="bx bx-search search-btn"></i>
-          <!-- <input type="text" placeholder="Buscar..."/> -->
           <span class="title">Buscar</span>
-        </div>
+        </a>
       </li>
 
       <li>
@@ -106,7 +105,10 @@
     </section>
     <section class="home" id="contact">
       <div class="formContainer p-4">
-        <h2 class="text-light text-center">Contacto</h2>
+        <h2 class="text-light text-center fw-light">¡Contactanos!</h2>
+        <p class="text-light fs-6 fw-light">Si tenés alguna duda, sugerencia o simplemente querés saludar, no dudes en
+          escribirnos.</p>
+        <img id="imgForm" src="../img/contacto.png" alt="ForoRecetas">
         <form class="formulario">
           <div class="inputContainer">
             <input class="input" id="nombre" type="text" name="Nombre" placeholder="a" required>
@@ -124,7 +126,36 @@
             <textarea class="input textarea" id="mensaje" name="Mensaje" placeholder="a" required></textarea>
             <label class="label" for="mensaje">Mensaje</label>
           </div>
-
+          <div class="inputContainer">
+            <select class="input" name="País" id="pais" required>
+              <option value="" disabled selected>Seleccione un país</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Bolivia">Bolivia</option>
+              <option value="Brasil">Brasil</option>
+              <option value="Chile">Chile</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Cuba">Cuba</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="El Salvador">El Salvador</option>
+              <option value="Guatemala">Guatemala</option>
+              <option value="Honduras">Honduras</option>
+              <option value="México">México</option>
+              <option value="Nicaragua">Nicaragua</option>
+              <option value="Panamá">Panamá</option>
+              <option value="Paraguay">Paraguay</option>
+              <option value="Perú">Perú</option>
+              <option value="Puerto Rico">Puerto Rico</option>
+              <option value="República Dominicana">República Dominicana</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Venezuela">Venezuela</option>
+            </select>
+            <label class="label " for="pais"></label>
+          </div>
+          <div id="checkboxContainer" class="inputContainer d-flex flex-row flex-wrap align-content-center gap-2">
+            <input class="" type="checkbox" name="Términos" id="terms" required>
+            <label class="text-light fw-lighter fs-6" for="terms">Acepto los términos y condiciones.</label>
+          </div>
           <div class="botonContainer">
             <input type="submit" class="enviarBtn" value="Enviar">
           </div>
