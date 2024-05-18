@@ -95,7 +95,7 @@
   opacity: 0;
   color: white;
   transition: margin 1s, opacity 0.5s;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 /* register form active */
@@ -115,7 +115,7 @@
   opacity: 0;
   color: white;
   transition: margin 1s, opacity 0.5s;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 /* login form active */
