@@ -15,7 +15,7 @@ function changebtn() {
 }
 
 function checkScreenWidth() {
-    if (window.innerWidth <= 768) { // Cambia el valor 768 según lo desees
+    if (window.innerWidth <= 835) {
         side_bar.classList.remove("expand");
     } else {
         side_bar.classList.add("expand");

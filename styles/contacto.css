@@ -9,8 +9,8 @@
 
 #imgForm {
     position: absolute;
-    width: 20%;
-    top: -3%;
+    width: 16%;
+    top: -4%;
     left: -4%;
     /* rotar la imagen levemente hacia la izquiera */
     transform: rotate(-16deg);
@@ -136,7 +136,25 @@
     font-weight: 500;
 }
 
+/* media para tablet y movil */
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+    .formContainer {
+        width: 90%;
+        height: fit-content;
+        display: flex;
+    }
+    
+    #contact {
+        align-items: flex-start;
+        padding-bottom: 2rem;
+    }
+}
+
 @media only screen and (max-width: 480px) {
+    #imgForm {
+        width: 20%;
+    }
+
     .formContainer {
         width: 90%;
         height: fit-content;
