@@ -1,49 +1,55 @@
 .tarjeta-receta .img-receta {
-    width: 18vw;
-    height: 28vh;
-    padding: 1rem;
-    border-radius: 2rem;
+  width: 18vw;
+  height: 28vh;
+  padding: 1rem;
+  border-radius: 2rem;
 }
 
 #boton-ver {
-    width: 30%;
+  width: 30%;
 }
 
 .contenedor-usuario img {
-    /* padding-left: 0; */
-    width: 45px;
-    height: 45px;
-    border-radius: 4rem;
-    object-fit: cover;
-    border: 0.1rem solid var(--color-white);
+  /* padding-left: 0; */
+  width: 45px;
+  height: 45px;
+  border-radius: 4rem;
+  object-fit: cover;
+  border: 0.1rem solid var(--color-white);
 }
 
 /* media para tablet */
 @media screen and (max-width: 834px) {
-    .contenedor-usuario {
-        margin-top: .3rem;
-    }
+  .contenedor-usuario {
+    margin-top: .3rem;
+  }
+
+  .tarjeta-receta .img-receta {
+    width: 35vw;
+    height: 40vh;
+  }
 }
 
 /* media para movil */
 @media screen and (max-width: 480px) {
-    .contenedor-usuario img {
-        width: 40px;
-        height: 40px;
-    }
+  .contenedor-usuario img {
+    width: 40px;
+    height: 40px;
+  }
 
-    .tarjeta-receta h5{
-        font-size: 1rem;    
-    }
+  .tarjeta-receta h5 {
+    font-size: 1rem;
+  }
 
-    .tarjeta-receta h6, .receta-descripcion a, .contenedor-usuario span{
-        font-size: .8rem !important;
-    }
+  .tarjeta-receta h6,
+  .receta-descripcion a,
+  .contenedor-usuario span {
+    font-size: .8rem !important;
+  }
 
-    .tarjeta-receta .img-receta{
-        width: 30vw;
-        height: 20vh;
-        padding-left: 1rem;
-    }
-
+  .tarjeta-receta .img-receta {
+    width: 40vw;
+    height: 25vh;
+    padding-left: 1rem;
+  }
 }
