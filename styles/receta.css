@@ -44,9 +44,9 @@
     }
   }
 
-@media (min-width: 818px) {
+/* @media (min-width: 818px) an (max-width: 1025px) {
   .cuerpo {
       height: 100vh;
       font-size: 2rem;
-  }
-}
+  }    NO ME LO TOMA NO ENTIENDO POR QUE
+} */
