@@ -24,3 +24,7 @@ function checkScreenWidth() {
 
 window.addEventListener("load", checkScreenWidth);
 window.addEventListener("resize", checkScreenWidth);
+
+let dato = 123 + "1";
+
+console.log(dato);
