@@ -5,6 +5,7 @@
 @import url('nav.css');
 @import url('banner.css');
 @import url('contacto.css');
+@import url('posts.css');
 
 * {
     box-sizing: border-box;
@@ -31,11 +32,4 @@ body {
 
 #home {
     background-color: var(--gris);
-}
-
-.card{
-    width: 18rem;
-}
-.card-img-cont{
-    max-height: 45%;
 }

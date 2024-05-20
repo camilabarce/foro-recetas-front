@@ -1,0 +1,43 @@
+.tarjeta-receta img {
+    width: 18vw;
+    height: 28vh;
+    padding-left: 1rem;
+}
+
+#boton-ver {
+    width: 30%;
+}
+
+.contenedor-usuario img {
+    padding-left: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 4rem;
+    object-fit: cover;
+    border: 0.1rem solid var(--color-white);
+}
+
+/* media para tablet */
+@media screen and (max-width: 834px) {
+    #boton-ver {
+        width: 40%;
+    }
+}
+
+/* media para movil */
+@media screen and (max-width: 480px) {
+    .tarjeta-receta h5{
+        font-size: 1rem;    
+    }
+    .tarjeta-receta h6, #boton-ver {
+        font-size: .8rem;
+    }
+    .tarjeta-receta img{
+        width: 40%;
+        height: 20vh;
+        padding-left: 1rem;
+    }
+    #boton-ver {
+        width: auto;
+    }
+}
