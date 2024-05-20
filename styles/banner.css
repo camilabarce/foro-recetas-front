@@ -1,9 +1,21 @@
 /* Estilos para el banner */
 .banner {
     width: 100%;
-    /* Reducimos el tamaño del banner */
-    height: 90%;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    object-fit: fill;
+}
+
+@media screen and (max-width: 834px) {
+    .banner {
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        height: 35vh;
+    }
 }
