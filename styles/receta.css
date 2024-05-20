@@ -43,3 +43,10 @@
         padding-bottom: 7rem;
     }
   }
+
+@media (min-width: 818px) {
+  .cuerpo {
+      height: 100vh;
+      font-size: 2rem;
+  }
+}
