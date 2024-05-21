@@ -59,11 +59,13 @@ body {
   .register__form.active {
     margin-left: 50% !important;
     opacity: 1;
+    width: 42%;
   }
   /* login form active */
   .login__form.active {
     opacity: 1;
     margin-left: 10% !important;
+    width: 42%;
   }
 }
 @media (max-width: 768px) {
@@ -72,6 +74,10 @@ body {
   }
   body {
     overflow-x: hidden;
+  }
+
+  .row {
+    --bs-gutter-x: 0;
   }
 }
 /* register default */
