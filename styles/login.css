@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
 body {
   font-family: "Poppins", sans-serif !important;
 }
@@ -21,7 +22,41 @@ body {
 .logo.active {
   color: rgb(255, 118, 45);
 }
-@media (min-width: 990px) {
+
+@media (min-width: 820px) {
+  /* register default */
+  .register__form {
+    position: absolute;
+    width: 42%;
+    height: 100vh;
+    margin-left: -100%;
+    opacity: 0;
+    color: white;
+    transition: margin 1s, opacity 0.5s;
+    z-index: 1;
+  }
+  /* register form active */
+  .register__form.active {
+    margin-left: 0%;
+    opacity: 1;
+  }
+  /* login form default */
+  .login__form {
+    position: absolute;
+    width: 42%;
+    height: 100vh;
+    margin-left: -100%;
+    opacity: 0;
+    color: white;
+    transition: margin 1s, opacity 0.5s;
+    z-index: 1;
+  }
+  /* login form active */
+  .login__form.active {
+    opacity: 1;
+    margin-left: 0%;
+  }
+
   body {
     overflow: hidden;
   } /* add circle orange background */
@@ -79,36 +114,36 @@ body {
   .row {
     --bs-gutter-x: 0;
   }
-}
-/* register default */
-.register__form {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  margin-left: -100%;
-  opacity: 0;
-  color: white;
-  transition: margin 1s, opacity 0.5s;
-  z-index: 1;
-}
-/* register form active */
-.register__form.active {
-  margin-left: 0%;
-  opacity: 1;
-}
-/* login form default */
-.login__form {
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  margin-left: -100%;
-  opacity: 0;
-  color: white;
-  transition: margin 1s, opacity 0.5s;
-  z-index: 1;
-}
-/* login form active */
-.login__form.active {
-  opacity: 1;
-  margin-left: 0%;
+
+  .register__form {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-left: -100%;
+    opacity: 0;
+    color: white;
+    transition: margin 1s, opacity 0.5s;
+    z-index: 1;
+  }
+  /* register form active */
+  .register__form.active {
+    margin-left: 0%;
+    opacity: 1;
+  }
+  /* login form default */
+  .login__form {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-left: -100%;
+    opacity: 0;
+    color: white;
+    transition: margin 1s, opacity 0.5s;
+    z-index: 1;
+  }
+  /* login form active */
+  .login__form.active {
+    opacity: 1;
+    margin-left: 0%;
+  }
 }
