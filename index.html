@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foro de Recetas</title>
-  <link rel="stylesheet" href="styles/main.css">
+  <title>ForoRecetas</title>
+  <link rel="stylesheet" href="../styles/main.css">
   <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -13,19 +13,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  <link rel="shortcut icon" href="./img/icono.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
 </head>
 
 <body>
   <header>
     <nav id="nav" class="navbar d-flex justify-content-end gap-2">
-      <a href="./posts/new-post.html" class="custom-button">Nueva Receta</a>
-      <a href="./pages/login.html" class="custom-button">Acceder</a>
+      <a href="../posts/new-post.html" class="custom-button">Nueva Receta</a>
+      <a href="../pages/login.html" class="custom-button">Acceder</a>
     </nav>
     <nav id="bottom-bar">
       <ul class="d-flex justify-content-between">
         <li>
-          <a href="pages/categorias.html" class="d-flex gap-2 flex-column text-decoration-none text-center">
+          <a href="../pages/categorias.html" class="d-flex gap-2 flex-column text-decoration-none text-center">
             <i class="bx bx-category"></i>
             <span class="title font">Categorías</span>
           </a>
@@ -40,7 +40,7 @@
         </li>
 
         <li>
-          <a href="./index.html" class="d-flex gap-2 flex-column text-decoration-none text-center">
+          <a href="../index.html" class="d-flex gap-2 flex-column text-decoration-none text-center">
             <i class="bx bx-home-alt-2"></i>
             <span class="title">Inicio</span>
           </a>
@@ -54,7 +54,7 @@
         </li> -->
 
         <li>
-          <a href="./pages/contacto.html" class="d-flex gap-2 flex-column text-decoration-none text-center">
+          <a href="../pages/contacto.html" class="d-flex gap-2 flex-column text-decoration-none text-center">
             <i class="bx bx-envelope"></i>
             <span class="title">Contacto</span>
           </a>
@@ -66,7 +66,7 @@
 
   <section id="sidebar" class="sidebar expand dark-mode">
     <div class="nav-header">
-      <h1 class="logo">ForoRecetas</h1>
+      <a href="../index.html"><h3 class="logo">ForoRecetas</h3></a>
       <i class="bx bx-menu-alt-right btn-menu"></i>
     </div>
     <ul class="nav-links">
@@ -76,14 +76,14 @@
         <span class="tooltip">Buscar</span>
       </li>
       <li>
-        <a href="./index.html" class="d-flex gap-2">
+        <a href="../index.html" class="d-flex gap-2">
           <i class="bx bx-home-alt-2"></i>
           <span class="title">Inicio</span>
         </a>
         <span class="tooltip">Inicio</span>
       </li>
       <li>
-        <a href="pages/categorias.html" class="d-flex gap-2">
+        <a href="../pages/categorias.html" class="d-flex gap-2">
           <i class="bx bx-category"></i>
           <span class="title">Categorías</span>
         </a>
@@ -97,14 +97,14 @@
         <span class="tooltip">Guardados</span>
       </li> -->
       <li>
-        <a href="pages/nosotros.html" class="d-flex gap-2">
+        <a href="../pages/nosotros.html" class="d-flex gap-2">
           <i class="bx bx-info-circle"></i>
           <span class="title">Sobre nosotros</span>
         </a>
         <span class="tooltip">Sobre nosotros</span>
       </li>
       <li>
-        <a href="./pages/contacto.html" class="d-flex gap-2">
+        <a href="../pages/contacto.html" class="d-flex gap-2">
           <i class="bx bx-envelope"></i>
           <span class="title">Contacto</span>
         </a>
@@ -115,29 +115,29 @@
 
   <section class="home" id="home">
     <h2 class="d-none">Foro</h2>
-    <a href="./pages/login.html">
+    <a href="../pages/login.html">
       <div class="banner-container ">
-        <img src="img/banner.png" alt="Banner de Foro de Comidas" class="banner">
+        <img src="../img/banner.png" alt="Banner de Foro de Comidas" class="banner">
       </div>
     </a>
 
     <div>
       <div class="d-flex w-100 flex-column gap-3 contenedor-tarjetas">
         <div class="card d-flex flex-row tarjeta-receta">
-          <a href="./pages/receta.html" class="align-self-center">
-            <img src="./img/vecteezy_3d-representacion-de-un-hamburguesa-lleno-con-huevos-en_44015813.png"
+          <a href="../pages/receta.html" class="align-self-center">
+            <img src="../img/vecteezy_3d-representacion-de-un-hamburguesa-lleno-con-huevos-en_44015813.png"
               class="card-img-top img-receta" alt="...">
           </a>
           <div class="card-body d-flex flex-column justify-content-around contenedor-receta-usuario">
             <div class="receta-descripcion">
-              <a href="./pages/receta.html" class="text-decoration-none text-white">
+              <a href="../pages/receta.html" class="text-decoration-none text-white">
                 <h5 class="card-title fw-semibold">Sandwich de jamón y cheddar</h5>
                 <h6 class="card-subtitle fw-light">Receta de panes caseros para hacer deliciosos sandwiches</h6>
               </a>
-              <a href="pages/categorias.html" class="btn bg-dark-subtle rounded-5 mt-1">Panes</a>
+              <a href="../pages/categorias.html" class="btn bg-dark-subtle rounded-5 mt-1">Panes</a>
             </div>
             <div class="contenedor-usuario d-flex gap-2">
-              <img src="img/user.jpg" alt="imagen del usuario">
+              <img src="../img/user.jpg" alt="imagen del usuario">
               <span>Sofía Perez
                 <i class="bi bi-caret-down-fill"></i>
               </span>
@@ -146,19 +146,19 @@
         </div>
 
         <div class="card d-flex flex-row tarjeta-receta">
-          <a href="./pages/receta.html" class="align-self-center">
-            <img src="./img/pizza-margherita.jpg" class="card-img-top img-receta" alt="...">
+          <a href="../pages/receta.html" class="align-self-center">
+            <img src="../img/pizza-margherita.jpg" class="card-img-top img-receta" alt="...">
           </a>
           <div class="card-body d-flex flex-column justify-content-around contenedor-receta-usuario">
             <div class="receta-descripcion">
-              <a href="./pages/receta.html" class="text-decoration-none text-white">
+              <a href="../pages/receta.html" class="text-decoration-none text-white">
                 <h5 class="card-title fw-semibold">Pizza margarita</h5>
                 <h6 class="card-subtitle fw-light">Receta clásica de pizza margarita con masa casera</h6>
               </a>
-              <a href="pages/categorias.html" class="btn bg-dark-subtle rounded-5 mt-1">Panes</a>
+              <a href="../pages/categorias.html" class="btn bg-dark-subtle rounded-5 mt-1">Panes</a>
             </div>
             <div class="contenedor-usuario d-flex gap-2">
-              <img src="img/user2.jpg" alt="imagen del usuario">
+              <img src="../img/user2.jpg" alt="imagen del usuario">
               <span>Juan López
                 <i class="bi bi-caret-down-fill"></i>
               </span>
@@ -167,19 +167,19 @@
         </div>
 
         <div class="card d-flex flex-row tarjeta-receta">
-          <a href="./pages/receta.html" class="align-self-center">
-            <img src="./img/ravioles.jpeg" class="card-img-top img-receta" alt="...">
+          <a href="../pages/receta.html" class="align-self-center">
+            <img src="../img/ravioles.jpeg" class="card-img-top img-receta" alt="...">
           </a>
           <div class="card-body d-flex flex-column justify-content-around contenedor-receta-usuario">
             <div class="receta-descripcion">
-              <a href="./pages/receta.html" class="text-decoration-none text-white">
+              <a href="../pages/receta.html" class="text-decoration-none text-white">
                 <h5 class="card-title fw-semibold">Ravioles de espinaca</h5>
                 <h6 class="card-subtitle fw-light">Receta de pasta rellena con espinaca y ricota</h6>
               </a>
-              <a href="pages/categorias.html" class="btn bg-dark-subtle rounded-5 mt-1">Pastas</a>
+              <a href="../pages/categorias.html" class="btn bg-dark-subtle rounded-5 mt-1">Pastas</a>
             </div>
             <div class="contenedor-usuario d-flex gap-2">
-              <img src="img/user3.jpg" alt="imagen del usuario">
+              <img src="../img/user3.jpg" alt="imagen del usuario">
               <span>María Gómez
                 <i class="bi bi-caret-down-fill"></i>
               </span>
@@ -263,7 +263,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="./scripts/sidebar.js"></script>
+  <script src="../scripts/sidebar.js"></script>
 </body>
 
 </html>
