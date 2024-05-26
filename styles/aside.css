@@ -261,7 +261,7 @@ ol, ul {
     left: 78px;
     width: calc(100% - 78px);
     min-height: 100vh;
-    /*background: var(--color-bg);*/
+    background: var(--color-bg);
     z-index: 6;
     transition: var(--transition);
 }

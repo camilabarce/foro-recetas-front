@@ -6,26 +6,11 @@
 @import url('banner.css');
 @import url('contacto.css');
 @import url('posts.css');
+@import url('new-post.css');
 
 * {
     box-sizing: border-box;
-    font-family: var(--font-family);
-}
-
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-a:active {
-    text-decoration: none;
+    font-family: var(--font-family); 
 }
 
 body {
