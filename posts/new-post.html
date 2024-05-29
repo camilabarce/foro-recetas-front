@@ -147,13 +147,13 @@
             <div>
               <p>Presiona Espacio o Coma para añadir tu etiqueta</p>
               <div class="etiquetas border border-2 rounded bg-dark-subtle">
-                <ul class="d-flex flex-wrap align-items-center m-1 list-group list-group-horizontal-sm" id="etiquetas">
-                  <input type="text" class="bg-dark border-0" id="tagInput">
+                <ul class="d-flex flex-wrap align-items-center list-group list-group-horizontal-sm" id="etiquetas">
+                  <input type="text" class="form-control" id="tagInput">
                 </ul>
               </div>
               <div class="detalles d-flex justify-content-between mt-3">
                 <p><span>_</span> etiquetas restantes</p>
-                <a class="btn btn-light" onclick="reset()">Eliminar etiquetas</a>
+                <button class="btn btn-light" onclick="reset()">Eliminar etiquetas</button>
               </div>
             </div>
             <div id="categoriaSelecc">
@@ -161,7 +161,7 @@
             </div>
           </div>
 
-          <div class="d-flex justify-content-end align-items-center mt-3 mb-3">
+          <div class="d-flex justify-content-end mt-3 mb-3">
             <a class="btn btn-outline-danger" href="../index.html">Cancelar</a>
             <button type="submit" class="ms-3 btn btn-outline-success">Publicar</button>
           </div>
