@@ -106,22 +106,22 @@
 
     <section class="home p-4 mb-5" id="home">
       <div class="container border rounded border-warning">
-        <form>
+        <form id="crearPost">
 
           <div class="form-group mt-3">
-            <label for="ptitle" class="mb-2">Título</label>
+            <label for="ptitle" class="mb-2">Título*</label>
             <input type="text" id="ptitle" name="ptitle" class="form-control"
-              placeholder="¡Inserta un título asombroso!">
+              placeholder="¡Inserta un título asombroso!" required>
           </div>
 
           <div class="form-group mt-3">
-            <label for="ingredientes" class="mb-2">Ingredientes</label>
-            <textarea name="ingredientes" id="ingredientes" class="form-control"></textarea>
+            <label for="ingredientes" class="mb-2">Ingredientes*</label>
+            <textarea name="ingredientes" id="ingredientes" class="form-control specialClass" required></textarea>
           </div>
 
           <div class="form-group mt-3">
-            <label for="descripcion" class="mb-2">Pasos a seguir</label>
-            <textarea name="descripcion" id="descripcion" class="form-control"></textarea>
+            <label for="descripcion" class="mb-2">Pasos a seguir*</label>
+            <textarea name="descripcion" id="descripcion" class="form-control specialClass" required></textarea>
           </div>
 
           <div class="input-group mt-3">
