@@ -1,5 +1,7 @@
 .section-categorias {
     background-color: var(--gris);
+    padding-top: 1.2rem;
+    border-top: .01rem solid var(--azul);
 }
 
 li.categoria-container {
@@ -67,4 +69,22 @@ li.categoria-container:hover {
 
 #ensaladas {
     background-image: url("../img/categorias/ensalada.png");
+}
+
+@media screen and (max-width: 480px) {
+    li.categoria-container {
+        width: 35vw;
+        height: 20vh;
+    }
+
+    .section-categorias {
+        margin-bottom: 18vh;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+    li.categoria-container {
+        width: 20vw;
+        height: 14vh;
+    }
 }
