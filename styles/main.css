@@ -6,6 +6,7 @@
 @import url('banner.css');
 @import url('contacto.css');
 @import url('posts.css');
+@import url('categorias.css');
 
 * {
     box-sizing: border-box;
