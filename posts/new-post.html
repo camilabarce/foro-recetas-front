@@ -70,7 +70,7 @@
       <ul class="nav-links">
         <li>
           <i class="bx bx-search search-btn"></i>
-          <input type="text" placeholder="Buscar...">
+          <input type="text" placeholder="Buscar..." id="buscar">
           <span class="tooltip">Buscar</span>
         </li>
         <li>
@@ -134,13 +134,13 @@
             <div>
               <p>Presiona Espacio o Coma para añadir tu etiqueta</p>
               <div class="etiquetas border border-2 rounded bg-dark-subtle">
+                <input type="text" class="form-control" id="tagInput">
                 <ul class="d-flex flex-wrap align-items-center list-group list-group-horizontal-sm" id="etiquetas">
-                  <input type="text" class="form-control" id="tagInput">
                 </ul>
               </div>
               <div class="detalles d-flex justify-content-between mt-3">
                 <p><span>_</span> etiquetas restantes</p>
-                <button class="btn btn-light" onclick="reset()">Eliminar etiquetas</button>
+                <button type="button" id="eliminar-etiqueta" class="btn btn-light">Eliminar etiquetas</button>
               </div>
             </div>
             <div id="categoriaSelecc">

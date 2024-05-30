@@ -2,7 +2,8 @@ const ul = document.getElementById("etiquetas"),
     input = document.getElementById("tagInput"),
     contador = document.querySelector(".detalles span");
 
-let maxTag = 4, tags = [];
+let maxTag = 4;
+let tags = [];
 
 contadorTag();
 
@@ -12,9 +13,9 @@ document.getElementById('crearPost').addEventListener('keypress', function (e) {
     }
 });
 
-function contadorTag() {
-    input.focus();
+function contadorTag() {    
     contador.innerText = maxTag - tags.length;
+    input.focus();
 }
 
 function createTag() {
@@ -63,7 +64,9 @@ function botonEtiqueta() {
 }
 
 function reset() {
-    tags.length = 0;
-    ul.querySelectorAll("li").forEach(li => { li.remove() });
+    tags = [];
+    ul.innerHTML = '';
     contadorTag();
 }
+
+document.getElementById("eliminar-etiqueta").addEventListener("click", reset);
