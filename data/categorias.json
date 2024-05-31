@@ -1,54 +1,67 @@
 {
   "categorias": [
     {
+      "id": 1,
       "nombre": "Panes",
       "imgUrl": "../img/categorias/panes.png"
     },
     {
+      "id": 2,
       "nombre": "Pastas",
       "imgUrl": "../img/categorias/pastas.png"
     },
     {
+      "id": 3,
       "nombre": "Tartas",
       "imgUrl": "../img/categorias/tartas.png"
     },
     {
+      "id": 4,
       "nombre": "Tortas",
       "imgUrl": "../img/categorias/tortas.png"
     },
     {
+      "id": 5,
       "nombre": "Postres",
       "imgUrl": "../img/categorias/postres.png"
     },
     {
+      "id": 6,
       "nombre": "Carnes",
       "imgUrl": "../img/categorias/carnes.png"
     },
     {
+      "id": 7,
       "nombre": "Cócteles",
       "imgUrl": "../img/categorias/cocteles.png"
     },
     {
+      "id": 8,
       "nombre": "Arroces",
       "imgUrl": "../img/categorias/arroces.png"
     },
     {
+      "id": 9,
       "nombre": "Sándwiches",
       "imgUrl": "../img/categorias/sandwiches.png"
     },
     {
+      "id": 10,
       "nombre": "Ensaladas",
       "imgUrl": "../img/categorias/ensaladas.png"
     },
     {
+      "id": 11,
       "nombre": "Sopas",
       "imgUrl": "../img/categorias/sopas.png"
     },
     {
+      "id": 12,
       "nombre": "Pizzas",
       "imgUrl": "../img/categorias/pizzas.png"
     },
     {
+      "id": 13,
       "nombre": "Pescados",
       "imgUrl": "../img/categorias/pescados.png"
     }

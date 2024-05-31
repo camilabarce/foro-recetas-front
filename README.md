@@ -2,7 +2,7 @@
 
 ## Tecnologías
 
-**Cliente:** HTML, CSS, JavaScript
+**Cliente:** HTML, CSS, Bootstrap, JavaScript
 
 **Servidor:** Node.js
 
