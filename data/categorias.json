@@ -2,7 +2,7 @@
   "categorias": [
     {
       "nombre": "Panes",
-      "imgUrl": "/img/categorias/panes.png"
+      "imgUrl": "../img/categorias/panes.png"
     },
     {
       "nombre": "Pastas",
