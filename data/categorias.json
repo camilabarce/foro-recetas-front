@@ -1,0 +1,56 @@
+{
+  "categorias": [
+    {
+      "nombre": "Panes",
+      "imgUrl": "/img/categorias/panes.png"
+    },
+    {
+      "nombre": "Pastas",
+      "imgUrl": "../img/categorias/pastas.png"
+    },
+    {
+      "nombre": "Tartas",
+      "imgUrl": "../img/categorias/tartas.png"
+    },
+    {
+      "nombre": "Tortas",
+      "imgUrl": "../img/categorias/tortas.png"
+    },
+    {
+      "nombre": "Postres",
+      "imgUrl": "../img/categorias/postres.png"
+    },
+    {
+      "nombre": "Carnes",
+      "imgUrl": "../img/categorias/carnes.png"
+    },
+    {
+      "nombre": "Cócteles",
+      "imgUrl": "../img/categorias/cocteles.png"
+    },
+    {
+      "nombre": "Arroces",
+      "imgUrl": "../img/categorias/arroces.png"
+    },
+    {
+      "nombre": "Sándwiches",
+      "imgUrl": "../img/categorias/sandwiches.png"
+    },
+    {
+      "nombre": "Ensaladas",
+      "imgUrl": "../img/categorias/ensaladas.png"
+    },
+    {
+      "nombre": "Sopas",
+      "imgUrl": "../img/categorias/sopas.png"
+    },
+    {
+      "nombre": "Pizzas",
+      "imgUrl": "../img/categorias/pizzas.png"
+    },
+    {
+      "nombre": "Pescados",
+      "imgUrl": "../img/categorias/pescados.png"
+    }
+  ]
+}
