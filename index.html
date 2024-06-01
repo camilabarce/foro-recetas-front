@@ -17,12 +17,6 @@
 </head>
 
 <body>
-  <header>
-    <nav id="nav" class="navbar d-flex justify-content-end gap-2">
-      <a href="./posts/new-post.html" class="custom-button">Nueva Receta</a>
-      <a href="./pages/login.html" class="custom-button">Acceder</a>
-    </nav>
-  </header>
   <nav id="bottom-bar">
     <ul class="d-flex justify-content-between">
       <li>
@@ -65,7 +59,7 @@
   </nav>
   <section id="sidebar" class="sidebar expand dark-mode">
     <div class="nav-header">
-      <h3 class="logo">ForoRecetas</h3>
+      <a href="./index.html" class="logo text-orange text-decoration-none fw-semibold fs-5">ForoRecetas</a>
       <i class="bx bx-menu-alt-right btn-menu"></i>
     </div>
     <ul class="nav-links">
@@ -112,7 +106,19 @@
     </ul>
   </section>
 
-  <section class="home" id="home">
+  <section class="home p-3" id="home">
+    <header class="pb-4">
+      <nav id="nav" class="navbar d-flex justify-content-end">
+        <div class="position-absolute top-0 start-0" id="logoIndex">
+          <a href="../index.html" class="logo text-orange text-decoration-none fw-semibold fs-5">ForoRecetas «</a>
+        </div>
+        <div class="position-absolute gap-2 top-0">
+          <a href="../posts/new-post.html" class="custom-button">Nueva Receta</a>
+          <a href="../pages/login.html" class="custom-button">Acceder</a>
+        </div>
+      </nav>
+    </header>
+
     <h2 class="d-none">Banner</h2>
     <a href="./pages/login.html">
       <div class="banner-container ">

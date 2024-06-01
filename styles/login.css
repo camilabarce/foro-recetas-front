@@ -3,6 +3,7 @@
 body {
   font-family: "Poppins", sans-serif !important;
 }
+
 /* add padding on input */
 .text-indent {
   text-indent: 0.5rem;
@@ -11,6 +12,7 @@ body {
 .text-orange {
   color: rgb(255, 118, 45);
 }
+
 /* add password hide and show icon */
 
 .password__icon {
@@ -19,11 +21,13 @@ body {
   padding: 15px 20px;
   cursor: pointer;
 }
+
 .logo.active {
   color: rgb(255, 118, 45);
 }
 
 @media (min-width: 820px) {
+
   /* register default */
   .register__form {
     position: absolute;
@@ -35,11 +39,13 @@ body {
     transition: margin 1s, opacity 0.5s;
     z-index: 1;
   }
+
   /* register form active */
   .register__form.active {
     margin-left: 0%;
     opacity: 1;
   }
+
   /* login form default */
   .login__form {
     position: absolute;
@@ -51,6 +57,7 @@ body {
     transition: margin 1s, opacity 0.5s;
     z-index: 1;
   }
+
   /* login form active */
   .login__form.active {
     opacity: 1;
@@ -59,7 +66,9 @@ body {
 
   body {
     overflow: hidden;
-  } /* add circle orange background */
+  }
+
+  /* add circle orange background */
   .ball {
     overflow: hidden;
     transition: margin 1s;
@@ -67,24 +76,29 @@ body {
     height: 31rem;
     background-color: rgb(255, 118, 45);
   }
+
   .ball.login {
     margin-left: 50%;
     margin-top: 5%;
   }
+
   .ball.register {
     margin-left: 14%;
     margin-top: 6%;
   }
+
   /* bouncing effect */
   .bounce {
     height: 30rem;
     animation: bounce 2s infinite alternate;
     -webkit-animation: bounce 2s infinite alternate;
   }
+
   @keyframes bounce {
     from {
       transform: translateY(-0.5rem);
     }
+
     to {
       transform: translateY(1rem);
     }
@@ -96,6 +110,7 @@ body {
     opacity: 1;
     width: 42%;
   }
+
   /* login form active */
   .login__form.active {
     opacity: 1;
@@ -103,10 +118,12 @@ body {
     width: 42%;
   }
 }
+
 @media (max-width: 768px) {
   .container .col-12.p-5 {
     padding: 0px !important;
   }
+
   body {
     overflow-x: hidden;
   }
@@ -119,17 +136,21 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
-    margin-left: -100%;
+    margin-left: 100%;
     opacity: 0;
     color: white;
     transition: margin 1s, opacity 0.5s;
     z-index: 1;
+    visibility: hidden;
   }
+
   /* register form active */
   .register__form.active {
     margin-left: 0%;
     opacity: 1;
+    visibility: visible;
   }
+
   /* login form default */
   .login__form {
     position: absolute;
@@ -140,10 +161,13 @@ body {
     color: white;
     transition: margin 1s, opacity 0.5s;
     z-index: 1;
+    visibility: hidden;
   }
+
   /* login form active */
   .login__form.active {
     opacity: 1;
     margin-left: 0%;
+    visibility: visible;
   }
 }

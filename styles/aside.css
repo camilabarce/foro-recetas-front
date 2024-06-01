@@ -43,11 +43,13 @@ ol, ul {
     font-weight: 700;
     opacity: 0;
     transition: var(--transition);
+    visibility: hidden;
 }
 
 .sidebar.expand .nav-header .logo {
     opacity: 1;
     transition: var(--transition);
+    visibility: visible;
 }
 
 .nav-header .btn-menu {

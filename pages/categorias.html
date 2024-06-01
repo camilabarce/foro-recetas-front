@@ -17,56 +17,51 @@
 </head>
 
 <body>
-  <header>
-    <nav id="nav" class="navbar d-flex justify-content-end gap-2">
-      <a href="../posts/new-post.html" class="custom-button">Nuevo Post</a>
-      <a href="login.html" class="custom-button">Acceder</a>
-    </nav>
-    <nav id="bottom-bar">
-      <ul class="d-flex justify-content-between">
-        <li>
-          <a href="#" class="d-flex gap-2 flex-column text-decoration-none text-center">
-            <i class="bx bx-category"></i>
-            <span class="title font">Categorías</span>
-          </a>
-        </li>
+  <nav id="bottom-bar">
+    <ul class="d-flex justify-content-between">
+      <li>
+        <a href="#" class="d-flex gap-2 flex-column text-decoration-none text-center">
+          <i class="bx bx-category"></i>
+          <span class="title font">Categorías</span>
+        </a>
+      </li>
 
-        <li>
-          <div class="d-flex gap-2 flex-column text-center">
-            <i class="bx bx-search search-btn"></i>
-            <!-- <input type="text" placeholder="Buscar..."/> -->
-            <span class="title">Buscar</span>
-          </div>
-        </li>
+      <li>
+        <div class="d-flex gap-2 flex-column text-center">
+          <i class="bx bx-search search-btn"></i>
+          <!-- <input type="text" placeholder="Buscar..."/> -->
+          <span class="title">Buscar</span>
+        </div>
+      </li>
 
-        <li>
-          <a href="../index.html" class="d-flex gap-2 flex-column text-decoration-none text-center">
-            <i class="bx bx-home-alt-2"></i>
-            <span class="title">Inicio</span>
-          </a>
-        </li>
+      <li>
+        <a href="../index.html" class="d-flex gap-2 flex-column text-decoration-none text-center">
+          <i class="bx bx-home-alt-2"></i>
+          <span class="title">Inicio</span>
+        </a>
+      </li>
 
-        <!-- <li>
+      <!-- <li>
           <a href="#" class="d-flex gap-2 flex-column text-decoration-none text-center">
             <i class="bx bx-bookmark"></i>
             <span class="title">Guardados</span>
           </a>
         </li> -->
 
-        <li>
-          <a href="contacto.html" class="d-flex gap-2 flex-column text-decoration-none text-center">
-            <i class="bx bx-envelope"></i>
-            <span class="title">Contacto</span>
-          </a>
-        </li>
+      <li>
+        <a href="./contacto.html" class="d-flex gap-2 flex-column text-decoration-none text-center">
+          <i class="bx bx-envelope"></i>
+          <span class="title">Contacto</span>
+        </a>
+      </li>
 
-      </ul>
-    </nav>
-  </header>
+    </ul>
+  </nav>
+
   <main>
     <section id="sidebar" class="sidebar expand dark-mode">
       <div class="nav-header">
-        <h1 class="logo">ForoRecetas</h1>
+        <a href="../index.html" class="logo text-orange text-decoration-none fw-semibold fs-5">ForoRecetas</a>
         <i class="bx bx-menu-alt-right btn-menu"></i>
       </div>
       <ul class="nav-links">
@@ -97,14 +92,14 @@
           <span class="tooltip">Guardados</span>
         </li> -->
         <li>
-          <a href="nosotros.html" class="d-flex gap-2">
+          <a href="./nosotros.html" class="d-flex gap-2">
             <i class="bx bx-info-circle"></i>
             <span class="title">Sobre nosotros</span>
           </a>
           <span class="tooltip">Sobre nosotros</span>
         </li>
         <li>
-          <a href="contacto.html" class="d-flex gap-2">
+          <a href="./contacto.html" class="d-flex gap-2">
             <i class="bx bx-envelope"></i>
             <span class="title">Contacto</span>
           </a>
@@ -112,7 +107,20 @@
         </li>
       </ul>
     </section>
-    <section class="home section-categorias">
+
+    <section class="home section-categorias p-3" id="home">
+      <header class="pb-4">
+        <nav id="nav" class="navbar d-flex justify-content-end">
+          <div class="position-absolute top-0 start-0" id="logoIndex">
+            <a href="../index.html" class="logo text-orange text-decoration-none fw-semibold fs-5">ForoRecetas «</a>
+          </div>
+          <div class="position-absolute gap-2 top-0">
+            <a href="../posts/new-post.html" class="custom-button">Nueva Receta</a>
+            <a href="../pages/login.html" class="custom-button">Acceder</a>
+          </div>
+        </nav>
+      </header>
+
       <h2 class="title text-center fs-4 fw-medium fst-italic">Categorías</h2>
       <ul class="categories m-4 d-flex flex-wrap justify-content-evenly gap-4">
       </ul>
