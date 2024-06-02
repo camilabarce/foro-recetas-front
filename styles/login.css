@@ -136,7 +136,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
-    margin-left: 100%;
+    margin-right: -100%;
     opacity: 0;
     color: white;
     transition: margin 1s, opacity 0.5s;
@@ -146,7 +146,7 @@ body {
 
   /* register form active */
   .register__form.active {
-    margin-left: 0%;
+    margin-right: 0%;
     opacity: 1;
     visibility: visible;
   }
