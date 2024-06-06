@@ -7,6 +7,7 @@
 @import url('contacto.css');
 @import url('posts.css');
 @import url('categorias.css');
+@import url('nosotros.css');
 
 * {
     box-sizing: border-box;

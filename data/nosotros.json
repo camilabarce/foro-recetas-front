@@ -1,0 +1,28 @@
+{
+    "nosotros": [
+        {
+            "nombre": "Camila Arce",
+            "img": "../img/nosotros/camila.png",
+            "linkedin": "https://www.linkedin.com/in/camilabarce/",
+            "github": "https://github.com/camilabarce"
+        },
+        {
+            "nombre": "Micaela Murrie",
+            "img": "../img/nosotros/",
+            "linkedin": "https://www.linkedin.com/in/micaela-murrie-a977b9284",
+            "github": "https://github.com/MicaelaMurrie"
+        },
+        {
+            "nombre": "Agustín Saldivia",
+            "img": "../img/nosotros/",
+            "linkedin": "",
+            "github": "https://github.com/ASaldi98"
+        },
+        {
+            "nombre": "Martín Rodriguez",
+            "img": "../img/nosotros/",
+            "linkedin": "",
+            "github": "https://github.com/Tincho25"
+        }
+    ]
+}

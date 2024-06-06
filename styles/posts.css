@@ -46,6 +46,21 @@
   overflow: hidden;
 }
 
+/* estilos para el like */
+.img-like {
+  width: 2.5rem;
+  height: 2.5rem;
+  filter: grayscale(80%);
+  transition: all .4s;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.img-like:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
 /* media para tablet */
 @media screen and (max-width: 834px) {
   .contenedor-usuario {
