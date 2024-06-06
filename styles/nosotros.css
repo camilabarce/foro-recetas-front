@@ -1,0 +1,10 @@
+.categoria-container.nosotros-card {
+    height: 45vh;
+    overflow: hidden;
+}
+
+.img-nos-container {
+    width: 100%;
+    overflow: hidden;
+    height: 30vh;
+}

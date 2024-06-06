@@ -7,6 +7,14 @@
     padding: 2rem 0;
 }
 
+.home.contact {
+    background: linear-gradient(95deg, rgba(25, 25, 25, 1) 13%, rgba(255, 126, 58, 1) 100%);
+}
+
+.nav-contact {
+    background-color: transparent;
+}
+
 #imgForm {
     position: absolute;
     width: 16%;
