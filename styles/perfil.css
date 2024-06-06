@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+
+.profile-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+
+/* Columna izquierda  */
+.profile-left {
+    background-color: #333;
+    padding: 30px;
+    width: 35%;
+    text-align: center;
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-left .input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.profile-left input[type="text"],
+.profile-left input[type="password"] {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: #fff; 
+    color: #000; 
+}
+
+.profile-left input[type="text"]::placeholder,
+.profile-left input[type="password"]::placeholder {
+    color: #666; 
+}
+
+.profile-left .edit-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.profile-left .edit-icon img {
+    width: 20px; 
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+}
+
+/* Columna derecha */
+.profile-right {
+    padding: 30px;
+    width: 65%;
+}
+
+.profile-right h3 {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.bio, .published-recipes, .favorite-recipes, .diet-type {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+#button-save {
+    padding: 10px 20px;
+    background-color: #ff7e3a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button-save:hover {
+    background-color: #e55c00;
+}
+
+.diet-type {
+    color: #fff;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #444;
+    color: #fff;
+}
+
+#diet-type-select option {
+    background-color: #444;
+    color: #fff;
+}
+
+.published-recipes {
+    color: #fff;
+}
+
+.favorite-recipes {
+    color: #fff;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .profile-left, .profile-right {
+        width: 100%;
+    }
+
+    .profile-left {
+        padding: 20px;
+    }
+
+    .profile-right {
+        padding: 20px;
+    }
+
+    .profile-left input[type="text"],
+    .profile-left input[type="password"] {
+        font-size: 14px;
+    }
+}
