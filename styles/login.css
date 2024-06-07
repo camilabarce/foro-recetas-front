@@ -14,7 +14,6 @@ body {
 }
 
 /* add password hide and show icon */
-
 .password__icon {
   position: absolute;
   right: 0;
@@ -26,8 +25,11 @@ body {
   color: rgb(255, 118, 45);
 }
 
-@media (min-width: 820px) {
+.row {
+  --bs-gutter-x: 0 !important;
+}
 
+@media (min-width: 1025px) {
   /* register default */
   .register__form {
     position: absolute;
@@ -42,8 +44,9 @@ body {
 
   /* register form active */
   .register__form.active {
-    margin-left: 0%;
     opacity: 1;
+    margin-left: 50% !important;
+    width: 42%;
   }
 
   /* login form default */
@@ -61,7 +64,8 @@ body {
   /* login form active */
   .login__form.active {
     opacity: 1;
-    margin-left: 0%;
+    margin-left: 10% !important;
+    width: 42%;
   }
 
   body {
@@ -98,24 +102,51 @@ body {
     from {
       transform: translateY(-0.5rem);
     }
-
     to {
       transform: translateY(1rem);
     }
   }
+}
 
-  /* register form active */
-  .register__form.active {
-    margin-left: 50% !important;
-    opacity: 1;
-    width: 42%;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cuerpo,
+  .logo,
+  h3,
+  .p {
+    font-size: 2rem !important;
   }
 
-  /* login form active */
+  input,
+  button {
+    height: 4rem;
+  }
+
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 100%;
+  }
+
+  .register__form,
+  .login__form {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-left: -100%;
+    opacity: 0;
+    color: white;
+    transition: margin 1s, opacity 0.5s;
+    z-index: 1;
+  }
+
+  .register__form.active,
   .login__form.active {
     opacity: 1;
-    margin-left: 10% !important;
-    width: 42%;
+    margin-left: 0;
+  }
+
+  .ball {
+    display: none !important;
   }
 }
 
@@ -169,5 +200,70 @@ body {
     opacity: 1;
     margin-left: 0%;
     visibility: visible;
+  }
+}
+
+/* Nest Hub */
+@media (min-width: 1024px) and (max-height: 600px) {
+  .cuerpo,
+  .logo,
+  h3,
+  .p {
+    font-size: 1rem !important;
+  }
+
+  input,
+  button {
+    height: 2.5rem;
+  }
+
+  .ball {
+    display: flex !important;
+    width: 25rem;
+    height: 25rem;
+    background-color: rgb(255, 118, 45);
+    border-radius: 50%;
+    transition: margin 1s;
+  }
+
+  .ball.login {
+    margin-top: 10%;
+    margin-left: 52%;
+  }
+
+  .ball.register {
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+
+  .register__form,
+  .login__form {
+    width: 50%;
+    height: 100vh;
+    opacity: 0;
+    color: white;
+    transition: margin 1s, opacity 0.5s;
+    z-index: 1;
+    margin-left: -100%;
+  }
+
+  .register__form.active {
+    opacity: 1;
+    margin-left: 50%;
+  }
+
+  .login__form.active {
+    opacity: 1;
+    margin-left: 5%;
+  }
+
+  body {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1280px) and (min-height: 800px) {
+  .ball {
+    margin-top: 10% !important;
   }
 }
