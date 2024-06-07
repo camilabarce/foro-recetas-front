@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+
+  <script src="../scripts/newpost.js" defer></script>
+
   <title>Nueva Receta</title>
 </head>
 
@@ -140,17 +143,16 @@
             <div>
               <p>Presiona Espacio o Coma para añadir tu etiqueta</p>
               <div class="etiquetas border border-2 rounded bg-dark-subtle">
-                <input type="text" class="form-control" id="tagInput">
                 <ul class="d-flex flex-wrap align-items-center list-group list-group-horizontal-sm" id="etiquetas">
                 </ul>
+                <input type="text" class="form-control" id="tagInput">
+                <select id="categoriaSelecc" class="form-select" size="3" data-categoria-container>
+                </select>
               </div>
               <div class="detalles d-flex justify-content-between mt-3">
                 <p><span>_</span> etiquetas restantes</p>
                 <button type="button" id="eliminar-etiqueta" class="btn btn-light">Eliminar etiquetas</button>
               </div>
-            </div>
-            <div id="categoriaSelecc">
-
             </div>
           </div>
 
@@ -163,8 +165,11 @@
     </section>
   </main>
 
+  <template data-categoria-select>
+    <option data-categorias></option>
+  </template>
+
   <script src="../scripts/sidebar.js"></script>
-  <script src="../scripts/etiquetas.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,31 @@
+{
+    "recetas": [
+        {
+            "ID": "1",
+            "titulo": "Sandwich de Jamon y Cheddar",
+            "ingredientes": "500 gramos de harina de trigo\n10 gramos de levadura seca o 25 gramos de levadura fresca\n250 ml de leche tibia\n50 gramos de mantequilla derretida\n1 huevo\n1 cucharadita de sal\n200 gramos de jamón cocido\n200 gramos de queso cheddar\nAceite vegetal para engrasar",
+            "pasos": "La masa: En un bol grande, mezcla la harina y la sal. En otro recipiente pequeño, disuelve la levadura en la leche tibia. Deja reposar unos minutos hasta que empiece a burbujear. Agrega la mezcla de levadura y leche a la harina. También agrega la mantequilla derretida y el huevo. Mezcla bien hasta formar una masa homogénea.\nAmasar: Espolvorea un poco de harina sobre una superficie limpia y lisa. Volca la masa sobre esta superficie y amasa durante unos 10 minutos o hasta que la masaesté suave y elástica.\nLevantar la masa: Engrasa un bol con aceite vegetal y coloca la masa dentro. Cubre el bol con un paño limpio y deja reposar la masa en un lugar cálido durante aproximadamente 1 hora, o hasta que duplique su tamaño.\nLos ingredientes: Precalienta el horno a 180°C (350°F). Corta el jamón y el queso cheddar en trozos pequeños para el relleno.\nArmar los panes: Después de que la masa haya duplicado su tamaño, colócala sobre una superficie enharinada y divídela en porciones del tamaño deseado para tus panes. Estira cada porción de masa en un círculo. Coloca una porción de jamón y queso cheddar en el centro de cada círculo de masa.\nCerrar y hornear: Dobla la masa sobre el relleno para cerrarla, formando una especie de empanada o bolsillo. Coloca los panes en una bandeja de horno previamente engrasada o cubierta con papel de hornear. Deja que los panes reposen unos 10 minutos mientras el horno termina de calentarse. Lleva al horno y hornea por unos 20-25 minutos o hasta que estén dorados y cocidos por dentro.",
+            "imagen": "../img/vecteezy_3d-representacion-de-un-hamburguesa-lleno-con-huevos-en_44015813.png",
+            "autorID": "",
+            "fechaCreacion": "16/05/2024"
+        },
+        {
+            "ID": "2",
+            "titulo": "Pizza margarita",
+            "ingredientes": "",
+            "pasos": "\n",
+            "imagen": "./img/pizza-margherita.jpg",
+            "autorID": "",
+            "fechaCreacion": ""
+        },
+        {
+            "ID": "3",
+            "titulo": "Ravioles de espinaca",
+            "ingredientes": "",
+            "pasos": "\n",
+            "imagen": "./img/ravioles.jpeg",
+            "autorID": "",
+            "fechaCreacion": ""
+        }
+    ]
+}

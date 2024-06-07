@@ -1,19 +1,25 @@
-const ul = document.getElementById("etiquetas"),
-    input = document.getElementById("tagInput"),
-    contador = document.querySelector(".detalles span");
-
-let maxTag = 4;
-let tags = [];
-
-contadorTag();
-
 document.getElementById('crearPost').addEventListener('keypress', function (e) {
     if (e.key == 13) {
         e.preventDefault();
     }
 });
 
-function contadorTag() {    
+
+
+
+//------Etiquetas
+
+const ul = document.getElementById("etiquetas"),
+    input = document.getElementById("tagInput"),
+    contador = document.querySelector(".detalles span"),
+
+let maxTag = 4;
+let tags = [];
+
+
+contadorTag();
+
+function contadorTag() {
     contador.innerText = maxTag - tags.length;
     input.focus();
 }
