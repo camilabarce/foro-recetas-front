@@ -1,0 +1,25 @@
+{
+    "usuarios": [
+        {
+            "email": "sofiperez@gmail.com",
+            "contraseña": "contraseña_segura1",
+            "nombre": "Sofía",
+            "apellido": "Perez",
+            "img": "../img/user.jpg"
+        },
+        {
+            "email": "juanlopez@example.com",
+            "contraseña": "contraseña_segura2",
+            "nombre": "Juan",
+            "apellido": "López",
+            "img": "../img/user2.jpg"
+        },
+        {
+            "email": "mariagonz@example.com",
+            "contraseña": "contraseña_segura3",
+            "nombre": "María",
+            "apellido": "Gómez",
+            "img": "../img/user3.jpg"
+        }
+    ]
+}
