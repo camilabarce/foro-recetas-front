@@ -85,6 +85,11 @@
   .tarjeta-receta {
     height: 40vh !important;
   }
+
+  .img-like {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 /* media para movil */
@@ -119,7 +124,7 @@
     font-size: .8rem !important;
   }
   
-  .contenedor-usuario span {
+  .contenedor-usuario span, .contenedor-usuario i {
     display: none;
   }
 
@@ -127,5 +132,13 @@
     width: 45vw;
     height: 20vh;
     padding: .5rem;
+  }
+
+  .img-like {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    bottom: 14%; 
+    right: -4%;
   }
 }
