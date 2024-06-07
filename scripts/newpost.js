@@ -11,7 +11,7 @@ document.getElementById('crearPost').addEventListener('keypress', function (e) {
 
 const ul = document.getElementById("etiquetas"),
     input = document.getElementById("tagInput"),
-    contador = document.querySelector(".detalles span"),
+    contador = document.querySelector(".detalles span");
 
 let maxTag = 4;
 let tags = [];
