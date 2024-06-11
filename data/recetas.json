@@ -27,7 +27,7 @@
                     "6": "Cerrar y hornear: Dobla la masa sobre el relleno para cerrarla, formando una especie de empanada o bolsillo. Coloca los panes en una bandeja de horno previamente engrasada o cubierta con papel de hornear. Deja que los panes reposen unos 10 minutos mientras el horno termina de calentarse. Lleva al horno y hornea por unos 20-25 minutos o hasta que estén dorados y cocidos por dentro."
                 }
             ],
-            "imagen": "./img/sandwich.png",
+            "imagen": "../img/sandwich.png",
             "autorID": "1",
             "fechaCreacion": "16/05/2024"
         },
@@ -60,7 +60,7 @@
                     "9": "Retira del horno y deja enfriar unos minutos antes de cortar y servir."
                 }
             ],
-            "imagen": "./img/pizza-margherita.jpg",
+            "imagen": "../img/pizza-margherita.jpg",
             "autorID": "2",
             "fechaCreacion": "26/05/2024"
         },
@@ -93,7 +93,7 @@
                     "9": "Escurre los ravioles y sírvelos con tu salsa favorita."
                 }
             ],
-            "imagen": "./img/ravioles.jpeg",
+            "imagen": "../img/ravioles.jpeg",
             "autorID": "3",
             "fechaCreacion": "03/06/2024"
         }
