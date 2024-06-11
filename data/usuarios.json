@@ -6,7 +6,7 @@
             "contraseña": "contraseña_segura1",
             "nombre": "Sofía",
             "apellido": "Perez",
-            "img": "../img/user.jpg",
+            "img": "./img/user.jpg",
             "bio": "Soy una persona muy alegre y me encanta la música. Me gusta mucho leer y salir a correr."
         },
         {
@@ -15,7 +15,7 @@
             "contraseña": "contraseña_segura2",
             "nombre": "Juan",
             "apellido": "López",
-            "img": "../img/user2.jpg",
+            "img": "./img/user2.jpg",
             "bio": "Me encanta la tecnología y la programación. Soy muy fanático de los videojuegos y me gusta mucho el fútbol."
         },
         {
@@ -24,7 +24,7 @@
             "contraseña": "contraseña_segura3",
             "nombre": "María",
             "apellido": "Gómez",
-            "img": "../img/user3.jpg",
+            "img": "./img/user3.jpg",
             "bio": "Soy una persona muy sociable y me encanta viajar. Me gusta mucho la fotografía y la moda."
         }
     ]
