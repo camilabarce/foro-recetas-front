@@ -1,0 +1,27 @@
+# Archivos de respaldo y temporales
+*~
+*.swp
+*.bak
+
+# Archivos de compilación
+*.o
+*.out
+*.exe
+
+# Directorios generados por IDEs
+.idea/
+.vscode/
+
+# Dependencias y módulos de Node.js
+node_modules/
+
+# Archivos de configuración local
+.env
+config.js
+
+# Archivos de registro y salida
+logs/
+*.log
+
+# Archivos de caché
+.cache/

@@ -27,7 +27,7 @@
                     "6": "Cerrar y hornear: Dobla la masa sobre el relleno para cerrarla, formando una especie de empanada o bolsillo. Coloca los panes en una bandeja de horno previamente engrasada o cubierta con papel de hornear. Deja que los panes reposen unos 10 minutos mientras el horno termina de calentarse. Lleva al horno y hornea por unos 20-25 minutos o hasta que estén dorados y cocidos por dentro."
                 }
             ],
-            "imagen": "../img/sandwich.png",
+            "imagen": "./img/sandwich.png",
             "autorID": "1",
             "fechaCreacion": "16/05/2024"
         },
