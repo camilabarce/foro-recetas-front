@@ -11,13 +11,18 @@
 # Directorios generados por IDEs
 .idea/
 .vscode/
+-express-app/.idea/
+-express-app/.vscode/
 
 # Dependencias y módulos de Node.js
 node_modules/
+-express-app/node_modules/
 
 # Archivos de configuración local
 .env
 config.js
+-express-app/.env
+-express-app/config.js
 
 # Archivos de registro y salida
 logs/

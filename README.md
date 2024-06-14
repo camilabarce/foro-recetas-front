@@ -2,9 +2,9 @@
 
 ## Tecnologías
 
-**Cliente:** HTML, CSS, Bootstrap, JavaScript
+**Client:** HTML, CSS, Bootstrap, JavaScript
 
-**Servidor:** Node.js
+**Server:** Node.js, Express.js
 
 ## Equipo
 
