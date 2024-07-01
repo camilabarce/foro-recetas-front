@@ -2,14 +2,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const contenedorTarjetas = document.querySelector('.contenedor-tarjetas');
 
     Promise.all([
-        fetch('data/usuarios.json').then(response => response.json()),
-        fetch('data/recetas.json').then(response => response.json())
-    ]).then(([usuariosData, recetasData]) => {
-        const usuarios = usuariosData.usuarios;
-        const recetas = recetasData.recetas;
+        fetch('http://localhost:3000/usuarios')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error al obtener los usuarios');
+                }
+                return response.json();
+            }),
+        fetch('http://localhost:3000/recetas')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error al obtener las recetas');
+                }
+                return response.json();
+            })
+    ]).then(([usuarios, recetas]) => {
+        if (!Array.isArray(usuarios) || !Array.isArray(recetas)) {
+            throw new Error('Datos no encontrados');
+        }
 
         recetas.forEach(receta => {
-            const autor = usuarios.find(usuario => usuario.id === parseInt(receta.autorID));
+            const usuario = usuarios.find(usuario => usuario.idusuario === receta.idusuario);
 
             const tarjetaHTML = `
                 <div class="card d-flex flex-row tarjeta-receta">
@@ -25,8 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
                             <a href="pages/categorias.html" class="btn bg-dark-subtle rounded-5 mt-1">${receta.categoria || 'Categoría'}</a>
                         </div>
                         <a href="pages/perfil.html" class="nav-link contenedor-usuario d-flex gap-2">
-                            <img src="${autor.img}" alt="imagen del usuario">
-                            <span>${autor.nombre} ${autor.apellido}</span>
+                            <img src="${usuario.imagen}" alt="imagen del usuario">
+                            <span>${usuario.nombre}</span>
                             <i class="bi bi-caret-down-fill"></i>
                         </a>
                     </div>
