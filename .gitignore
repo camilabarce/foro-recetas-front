@@ -9,17 +9,17 @@
 *.exe
 
 # Directorios generados por IDEs
-.idea/
-.vscode/
+frontend/.idea/
+frontend/.vscode/
 backend/.idea/
 backend/.vscode/
 
 # Dependencias y módulos de Node.js
-node_modules/
+frontend/node_modules/
 backend/node_modules/
 
 # Archivos de configuración local
-.env
+frontend/.env
 config.js
 backend/.env
 backend/config.js
