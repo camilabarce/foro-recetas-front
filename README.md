@@ -10,12 +10,14 @@ Un foro de recetas donde los usuarios pueden compartir sus recetas favoritas.
 
 **Server:** Node.js, Express.js
 
+**Database:** MySQL
+
 ## Instalación
 
 ```bash
   cd backend
   npm install 
-  npx nodemon
+  npm start ó npx nodemon
 ```
 
 ## Equipo

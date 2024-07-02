@@ -1,12 +1,12 @@
-fetch('../data/categorias.json')
+fetch('http://localhost:3000/categorias')
   .then(response => response.json())
-  .then(jsonData => {
+  .then(categorias => {
     const categoriesContainer = document.querySelector('.categories');
 
-    jsonData.categorias.forEach(categoria => {
+    categorias.forEach(categoria => {
       const li = `
       <li class="categoria-container">
-        <div class="img-container" style="background-image: url('${categoria.imgUrl}');"></div>
+        <div class="img-container" style="background-image: url('http://localhost:3000${categoria.imagen}');"></div>
         <a href="" class="text-decoration-none d-flex justify-content-center align-items-center">
           <h3 class="fs-6 fw-light">${categoria.nombre}</h3>
         </a>
@@ -15,4 +15,4 @@ fetch('../data/categorias.json')
       categoriesContainer.insertAdjacentHTML('beforeend', li);
     });
   })
-  .catch(error => console.error('Error al cargar el JSON:', error));
+  .catch(error => console.error('Error al cargar el JSON de categorías:', error));

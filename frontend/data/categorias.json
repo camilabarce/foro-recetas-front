@@ -3,67 +3,67 @@
     {
       "id": 1,
       "nombre": "Panes",
-      "imgUrl": "../img/categorias/panes.png"
+      "imagen": "/images/categorias/panes.png"
     },
     {
       "id": 2,
       "nombre": "Pastas",
-      "imgUrl": "../img/categorias/pastas.png"
+      "imagen": "/images/categorias/pastas.png"
     },
     {
       "id": 3,
       "nombre": "Tartas",
-      "imgUrl": "../img/categorias/tartas.png"
+      "imagen": "/images/categorias/tartas.png"
     },
     {
       "id": 4,
       "nombre": "Tortas",
-      "imgUrl": "../img/categorias/tortas.png"
+      "imagen": "/images/categorias/tortas.png"
     },
     {
       "id": 5,
       "nombre": "Postres",
-      "imgUrl": "../img/categorias/postres.png"
+      "imagen": "/images/categorias/postres.png"
     },
     {
       "id": 6,
       "nombre": "Carnes",
-      "imgUrl": "../img/categorias/carnes.png"
+      "imagen": "/images/categorias/carnes.png"
     },
     {
       "id": 7,
       "nombre": "Cócteles",
-      "imgUrl": "../img/categorias/cocteles.png"
+      "imagen": "/images/categorias/cocteles.png"
     },
     {
       "id": 8,
       "nombre": "Arroces",
-      "imgUrl": "../img/categorias/arroces.png"
+      "imagen": "/images/categorias/arroces.png"
     },
     {
       "id": 9,
       "nombre": "Sándwiches",
-      "imgUrl": "../img/categorias/sandwiches.png"
+      "imagen": "/images/categorias/sandwiches.png"
     },
     {
       "id": 10,
       "nombre": "Ensaladas",
-      "imgUrl": "../img/categorias/ensaladas.png"
+      "imagen": "/images/categorias/ensaladas.png"
     },
     {
       "id": 11,
       "nombre": "Sopas",
-      "imgUrl": "../img/categorias/sopas.png"
+      "imagen": "/images/categorias/sopas.png"
     },
     {
       "id": 12,
       "nombre": "Pizzas",
-      "imgUrl": "../img/categorias/pizzas.png"
+      "imagen": "/images/categorias/pizzas.png"
     },
     {
       "id": 13,
       "nombre": "Pescados",
-      "imgUrl": "../img/categorias/pescados.png"
+      "imagen": "/images/categorias/pescados.png"
     }
   ]
 }

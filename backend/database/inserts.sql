@@ -8,3 +8,18 @@ INSERT INTO recetas (idrecetas, titulo, subtitulo, imagen, pasos, ingredientes, 
 (1, 'Sandwich de Jamón y Cheddar', 'Delicioso y fácil de preparar', 'sandwich.jpg', '1. Cortar el pan. 2. Colocar jamón y queso cheddar. 3. Calentar en la plancha.', 'Pan, Jamón, Queso Cheddar', 1),
 (2, 'Pizza Margarita', 'Clásica y sabrosa', 'pizza.jpg', '1. Preparar la masa. 2. Añadir salsa de tomate. 3. Colocar mozzarella y albahaca. 4. Hornear a 220°C por 15 minutos.', 'Masa, Salsa de Tomate, Mozzarella, Albahaca', 2),
 (3, 'Ravioles de Espinaca', 'Pasta fresca rellena de espinaca y ricota', 'ravioles.jpg', '1. Preparar la masa de pasta. 2. Hacer el relleno de espinaca y ricota. 3. Formar los ravioles. 4. Cocinar en agua hirviendo por 3 minutos.', 'Harina, Espinaca, Ricota, Huevos', 3);
+
+INSERT INTO categorias (nombre, imagen) VALUES
+('Panes', '/images/categorias/panes.png'),
+('Pastas', '/images/categorias/pastas.png'),
+('Tartas', '/images/categorias/tartas.png'),
+('Tortas', '/images/categorias/tortas.png'),
+('Postres', '/images/categorias/postres.png'),
+('Carnes', '/images/categorias/carnes.png'),
+('Cócteles', '/images/categorias/cocteles.png'),
+('Arroces', '/images/categorias/arroces.png'),
+('Sándwiches', '/images/categorias/sandwiches.png'),
+('Ensaladas', '/images/categorias/ensaladas.png'),
+('Sopas', '/images/categorias/sopas.png'),
+('Pizzas', '/images/categorias/pizzas.png'),
+('Pescados', '/images/categorias/pescados.png');
