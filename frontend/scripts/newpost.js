@@ -23,72 +23,49 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => {
             console.error('Error al cargar las categorías:', error);
         });
+
+    let formulario = document.getElementById('crearPost');
+    let titulo = document.getElementById('titulo');
+    let subtitulo = document.getElementById('subtitulo');
+    let ingredientes = document.getElementById('ingredientes');
+    let pasos = document.getElementById('pasos');
+    let imagen = document.getElementById('imagen');
+    let categoria = document.getElementById('categoriaSelect');
+
+    formulario.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        let url = 'http://localhost:3000/recetas/nuevaReceta';
+        let formData = new FormData();
+        formData.append('titulo', titulo.value);
+        formData.append('subtitulo', subtitulo.value);
+        formData.append('imagen', imagen.files[0]);
+        formData.append('pasos', pasos.value);
+        formData.append('ingredientes', ingredientes.value);
+        formData.append('idcategoria', categoria.value); // Asegúrate de que el nombre coincida con el backend
+        // formData.append('idusuario', 1); Suponiendo que el ID del usuario es 1
+
+        console.log('Enviando los siguientes datos:', Object.fromEntries(formData.entries()));
+
+        fetch(url, {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error al enviar la receta');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Receta agregada exitosamente:', data);
+                // Aquí puedes redirigir al usuario, mostrar un mensaje de éxito, etc.
+                // alert('Receta agregada exitosamente');
+            })
+            .catch(error => {
+                console.error('Error al enviar la receta:', error);
+                // Aquí puedes mostrar un mensaje de error al usuario
+                // alert('Error al enviar la receta');
+            });
+    });
 });
-
-
-document.getElementById('crearPost').addEventListener('keypress', function (e) {
-    if (e.key == 13) {
-        e.preventDefault();
-    }
-});
-
-//------Etiquetas
-
-// const ul = document.getElementById("etiquetas"),
-//     input = document.getElementById("tagInput"),
-//     contador = document.querySelector(".detalles span");
-
-// let maxTag = 4;
-// let tags = [];
-
-// function createTag() {
-//     ul.querySelectorAll("li").forEach(li => { li.remove() });
-//     tags.slice().reverse().forEach(tag => {
-//         let liTag = `<li class="list-group-item m-1" onclick="remove(this,'${tag}')">${tag} <i id="botonCerrar" class="bi bi-x-circle"></i></li>`;
-//         ul.insertAdjacentHTML("afterbegin", liTag);
-//         botonEtiqueta();
-//     })
-//     contadorTag();
-// }
-
-// function remove(element, tag) {
-//     let index = tags.indexOf(tag);
-//     tags = [...tags.slice(0, index), ...tags.slice(index + 1)];
-//     element.remove();
-//     contadorTag();
-// }
-
-// function addTag(e) {
-//     if (e.key == " " || e.key == ",") {
-//         let tag = e.target.value.replaceAll(",", "").replaceAll(" ", "");
-//         if (tag.length > 1 && !tags.includes(tag)) {
-//             if (tags.length < maxTag) {
-//                 tags.push(tag);
-//                 createTag();
-//             }
-//         }
-//         e.target.value = "";
-//     }
-// }
-
-// input.addEventListener("keyup", addTag);
-
-// function botonEtiqueta() {
-//     const equis = document.getElementById("botonCerrar");
-
-//     equis.parentElement.onmouseover = () => {
-//         equis.className = "bi bi-x-circle-fill";
-//         equis.parentElement.style.cursor = 'pointer';
-//     };
-//     equis.parentElement.onmouseout = () => {
-//         equis.className = "bi bi-x-circle";
-//     };
-// }
-
-// function reset() {
-//     tags = [];
-//     ul.innerHTML = '';
-//     contadorTag();
-// }
-
-// document.getElementById("eliminar-etiqueta").addEventListener("click", reset);

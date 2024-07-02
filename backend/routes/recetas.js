@@ -2,9 +2,47 @@ const express = require('express');
 const router = express.Router();
 const connection = require("./../db-connection")
 const multer = require('multer')
-const upload = multer({ dest: 'uploads/' })
+const upload = multer({ dest: 'uploads/' });
 const fs = require('fs')
 
+router.post('/nuevaReceta', upload.single('imagen'), async function (req, res, next) {
+    const { titulo, subtitulo, pasos, ingredientes, idcategoria } = req.body;
+    const imagen = req.file;
+
+    console.log('Datos recibidos:', req.body);
+    console.log('Archivo recibido:', req.file);
+
+    if (!titulo || !subtitulo || !imagen || !pasos || !ingredientes || !idcategoria) {
+        return res.status(400).json({ error: 'Todos los campos son requeridos' });
+    }
+
+    const imagenPath = `/images/recetas/${imagen.originalname}`;
+
+    try {
+        // Insertar la receta en la base de datos
+        const query = `
+            INSERT INTO recetas (titulo, subtitulo, imagen, pasos, ingredientes, idcategoria) 
+            VALUES (?, ?, ?, ?, ?, ?)
+        `;
+        const values = [titulo, subtitulo, imagenPath, pasos, ingredientes, idcategoria];
+        const results = await connection.query(query, values);
+
+        // Mover la imagen del directorio temporal a la carpeta de imágenes pública
+        fs.createReadStream(`./uploads/${imagen.filename}`)
+            .pipe(fs.createWriteStream(`./public/images/recetas/${imagen.originalname}`))
+            .on('finish', () => {
+                res.json({ message: 'Receta agregada exitosamente', id: results.insertId });
+            })
+            .on('error', (error) => {
+                console.error('Error al mover la imagen:', error);
+                return res.status(500).json({ error: 'Error al mover la imagen' });
+            });
+
+    } catch (error) {
+        console.error('Error al insertar la receta:', error);
+        return res.status(500).json({ error: 'Error al insertar la receta' });
+    }
+});
 
 router.get('/', function (req, res, next) {
     const query = `
@@ -47,25 +85,6 @@ router.get('/:id', function (req, res, next) {
         }
 
         res.json(results[0]);
-    });
-});
-
-router.post('/', function (req, res, next) {
-    const { titulo, subtitulo, imagen, pasos, ingredientes, idusuario } = req.body;
-
-    if (!titulo || !subtitulo || !imagen || !pasos || !ingredientes || !idusuario) {
-        return res.status(400).json({ error: 'Todos los campos son requeridos' });
-    }
-
-    let query = 'INSERT INTO recetas (titulo, subtitulo, imagen, pasos, ingredientes, idusuario) VALUES (?, ?, ?, ?, ?, ?)';
-    let values = [titulo, subtitulo, imagen, pasos, ingredientes, idusuario];
-
-    connection.query(query, values, function (error, results, fields) {
-        if (error) {
-            console.error('Error al insertar la receta:', error);
-            return res.status(500).json({ error: 'Error al insertar la receta' });
-        }
-        res.json({ message: 'Receta agregada exitosamente', id: results.insertId });
     });
 });
 
