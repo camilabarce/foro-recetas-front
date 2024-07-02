@@ -113,7 +113,7 @@ CREATE TABLE `recetas` (
   PRIMARY KEY (`idreceta`),
   KEY `id-recetas-usuario_idx` (`idusuario`),
   CONSTRAINT `id-recetas-usuario` FOREIGN KEY (`idusuario`) REFERENCES `usuarios` (`idusuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -122,7 +122,7 @@ CREATE TABLE `recetas` (
 
 LOCK TABLES `recetas` WRITE;
 /*!40000 ALTER TABLE `recetas` DISABLE KEYS */;
-INSERT INTO `recetas` VALUES (1,'Sandwich de Jamón y Cheddar','Delicioso y fácil de preparar','https://github.com/camilabarce/codo-a-codo-nodejs/blob/main/frontend/img/sandwich.png','1. Cortar el pan. 2. Colocar jamón y queso cheddar. 3. Calentar en la plancha.','Pan, Jamón, Queso Cheddar',1),(2,'Pizza Margarita','Clásica y sabrosa','https://github.com/camilabarce/codo-a-codo-nodejs/blob/main/frontend/img/pizza-margherita.jpg','1. Preparar la masa. 2. Añadir salsa de tomate. 3. Colocar mozzarella y albahaca. 4. Hornear a 220°C por 15 minutos.','Masa, Salsa de Tomate, Mozzarella, Albahaca',2),(5,'Ravioles de Espinaca','Pasta fresca rellena de espinaca y ricota','https://github.com/camilabarce/codo-a-codo-nodejs/blob/main/frontend/img/ravioles.jpeg','preparar la masa de pasta, hacer el relleno de espinaca y ricota, formar los ravioles, cocinar en agua hirviendo por 3 minutos','Harina, Espinaca, Ricota, Huevos',1);
+INSERT INTO `recetas` VALUES (1,'Sandwich de Jamón y Cheddar','Delicioso y fácil de preparar','/images/recetas/sandwich.png','1. Cortar el pan. 2. Colocar jamón y queso cheddar. 3. Calentar en la plancha.','Pan, Jamón, Queso Cheddar',1),(2,'Pizza Margarita','Clásica y sabrosa','/images/recetas/pizza.jpg','1. Preparar la masa. 2. Añadir salsa de tomate. 3. Colocar mozzarella y albahaca. 4. Hornear a 220°C por 15 minutos.','Masa, Salsa de Tomate, Mozzarella, Albahaca',2),(5,'Ravioles de Espinaca','Pasta fresca rellena de espinaca y ricota','/images/recetas/ravioles.jpeg','preparar la masa de pasta, hacer el relleno de espinaca y ricota, formar los ravioles, cocinar en agua hirviendo por 3 minutos','Harina, Espinaca, Ricota, Huevos',3);
 /*!40000 ALTER TABLE `recetas` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -150,7 +150,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'Juan Pérez','juan.perez@example.com','contraseña123','Desarrollador de software con 5 años de experiencia.','juan.jpg'),(2,'María García','maria.garcia@example.com','segura456','Diseñadora gráfica apasionada por el arte digital.','maria.png'),(3,'Carlos Sánchez','carlos.sanchez@example.com','clave789','Ingeniero de datos especializado en big data.','carlos.jpeg'),(4,'Ana López','ana.lopez@example.com','passw0rd!','Especialista en marketing digital y redes sociales.','ana.jpg');
+INSERT INTO `usuarios` VALUES (1,'Juan Pérez','juan.perez@example.com','contraseña123','Desarrollador de software con 5 años de experiencia.','/images/usuarios/user2.jpg'),(2,'María García','maria.garcia@example.com','segura456','Diseñadora gráfica apasionada por el arte digital.','/images/usuarios/user1.jpg'),(3,'Carlos Sánchez','carlos.sanchez@example.com','clave789','Ingeniero de datos especializado en big data.','/images/usuarios/user4.jpg'),(4,'Ana López','ana.lopez@example.com','passw0rd!','Especialista en marketing digital y redes sociales.','/images/usuarios/user3.jpg');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -163,4 +163,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-07-01 11:56:21
+-- Dump completed on 2024-07-01 21:36:44
