@@ -7,7 +7,24 @@ const fs = require('fs')
 
 
 router.get('/', function (req, res, next) {
-    connection.query('SELECT * FROM recetas', function (error, results, fields) {
+    const query = `
+        SELECT 
+            recetas.idreceta,
+            recetas.titulo,
+            recetas.subtitulo,
+            recetas.imagen,
+            recetas.pasos,
+            recetas.ingredientes,
+            recetas.idusuario,
+            categorias.nombre AS nombre_categoria
+        FROM 
+            recetas
+        JOIN 
+            usuarios ON recetas.idusuario = usuarios.idusuario
+        JOIN 
+            categorias ON recetas.idcategoria = categorias.idcategoria;
+    `;
+    connection.query(query, function (error, results, fields) {
         if (error) {
             console.error('Error al obtener las recetas:', error);
             return res.status(500).json({ error: 'Error al obtener las recetas' });

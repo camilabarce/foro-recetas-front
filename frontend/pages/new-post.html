@@ -12,10 +12,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
-
-  <script src="../scripts/newpost.js" defer></script>
-
-  <title>Nueva Receta</title>
+  <title>Nueva receta</title>
 </head>
 
 <body>
@@ -117,58 +114,44 @@
       <div class="container border rounded border-warning">
         <form id="crearPost">
           <div class="form-group mt-3">
-            <label for="ptitle" class="mb-2">Título*</label>
-            <input type="text" id="ptitle" name="ptitle" class="form-control"
-              placeholder="¡Inserta un título asombroso!" required>
+            <label for="ptitle" class="mb-2">Título</label>
+            <input type="text" id="ptitle" name="ptitle" class="form-control" placeholder="¡Inserta un título!"
+              required>
           </div>
 
           <div class="form-group mt-3">
-            <label for="ingredientes" class="mb-2">Ingredientes*</label>
-            <textarea name="ingredientes" id="ingredientes" class="form-control specialClass" required></textarea>
+            <label for="ingredientes" class="mb-2">Ingredientes</label>
+            <textarea name="ingredientes" id="ingredientes" class="form-control specialClass"
+              placeholder="Escribí los ingredientes separados por comas ," required></textarea>
           </div>
 
           <div class="form-group mt-3">
-            <label for="descripcion" class="mb-2">Pasos a seguir*</label>
-            <textarea name="descripcion" id="descripcion" class="form-control specialClass" required></textarea>
+            <label for="descripcion" class="mb-2">Pasos a seguir</label>
+            <textarea name="descripcion" id="descripcion" class="form-control specialClass"
+              placeholder="Escribí los pasos separados por guiones -" required></textarea>
           </div>
 
           <div class="input-group mt-3">
-            <label class="input-group-text" for="imgReceta">Sube una imágen</label>
-            <input type="file" class="form-control" id="imgReceta">
+            <label class="input-group-text" for="imgReceta">Subí una imagen de tu receta</label>
+            <input type="file" class="form-control" id="imgReceta" required>
           </div>
 
           <div class="form-group mt-3 carta">
-            <h6 class="mb-2"><i class="bi bi-tags"></i> Etiquetas / Categoría</h6>
-            <div>
-              <p>Presiona Espacio o Coma para añadir tu etiqueta</p>
-              <div class="etiquetas border border-2 rounded bg-dark-subtle">
-                <ul class="d-flex flex-wrap align-items-center list-group list-group-horizontal-sm" id="etiquetas">
-                </ul>
-                <input type="text" class="form-control" id="tagInput">
-                <select id="categoriaSelecc" class="form-select" size="3" data-categoria-container>
-                </select>
-              </div>
-              <div class="detalles d-flex justify-content-between mt-3">
-                <p><span>_</span> etiquetas restantes</p>
-                <button type="button" id="eliminar-etiqueta" class="btn btn-light">Eliminar etiquetas</button>
-              </div>
-            </div>
+            <h6 class="mb-2"><i class="bi bi-tags"></i>Categoría</h6>
+            <select id="categoriaSelect" class="form-select" data-categoria-container required>
+              <option>Selecciona una categoría</option>
+            </select>
           </div>
 
-          <div class="d-flex justify-content-end mt-3 mb-3">
-            <a class="btn btn-outline-danger" href="../index.html">Cancelar</a>
-            <button type="submit" class="ms-3 btn btn-outline-success">Publicar</button>
+          <div class="d-flex justify-content-center mt-3 mb-3">
+            <button type="submit" class="btn btn-outline-success w-25">Publicar</button>
           </div>
         </form>
       </div>
     </section>
   </main>
-
-  <template data-categoria-select>
-    <option data-categorias></option>
-  </template>
-
   <script src="../scripts/sidebar.js"></script>
+  <script src="../scripts/newpost.js"></script>
 </body>
 
 </html>

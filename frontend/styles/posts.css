@@ -14,12 +14,6 @@
   height: 35vh !important;
 }
 
-/* .tarjeta-receta:hover {
-  -webkit-box-shadow: 5px 5px 17px -4px rgba(246, 246, 246, 0.55);
-  -moz-box-shadow: 5px 5px 17px -4px rgba(246, 246, 246, 0.55);
-  box-shadow: 5px 5px 17px -4px rgba(246, 246, 246, 0.55);
-} */
-
 .contenedor-usuario img {
   /* padding-left: 0; */
   width: 45px;
@@ -124,6 +118,9 @@
     font-size: .8rem !important;
   }
   
+  .receta-descripcion a.btn.bg-dark-subtle.rounded-5.mt-1.w-25 {
+    width: auto !important;
+  }
   .contenedor-usuario span, .contenedor-usuario i {
     display: none;
   }
