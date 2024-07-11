@@ -48,13 +48,14 @@
               >
             </p>
 
-            <form class="mt-5">
+            <form id="session_login_form" class="mt-5">
               <div class="mb-3">
                 <label class="form-label">Email</label>
                 <input
                   type="email"
                   class="form-control text-indent shadow-sm bg-grey-light border-0 rounded-pill fw-lighter fs-7 p-3"
                   placeholder="nombre@ejemplo.com"
+                  name="email"
                 >
               </div>
               <div class="mb-3">
@@ -62,7 +63,8 @@
                 <div class="d-flex position-relative">
                   <input
                     type="password"
-                    class="form-control text-indent auth__password shadow-sm bg-grey-light border-0 rounded-pill fw-lighter fs-7 p-3"
+                    class="for-control text-indent auth__password shadow-sm bg-grey-light border-0 rounded-pill fw-lighter fs-7 p-3"
+                    name="password"
                   >
                   <span
                     class="password__icon text-orange fs-5 fw-bold bi bi-eye-slash"
@@ -118,12 +120,13 @@
               >
             </p>
 
-            <form class="mt-5">
+            <form id="user_registration_form" class="mt-5">
               <div class="mb-3">
                 <label class="form-label">Usuario</label>
                 <input
                   type="text"
                   class="form-control text-indent shadow-sm bg-grey-light border-0 rounded-pill fw-lighter fs-7 p-3"
+                  name="username"
                   placeholder="nombre1"
                 >
               </div>
@@ -131,6 +134,7 @@
                 <label class="form-label">Email</label>
                 <input
                   type="email"
+                  name="email"
                   class="form-control text-indent shadow-sm bg-grey-light border-0 rounded-pill fw-lighter fs-7 p-3"
                   placeholder="nombre@ejemplo.com"
                 >
@@ -140,6 +144,7 @@
                 <div class="d-flex position-relative">
                   <input
                     type="password"
+                    name="password"
                     class="form-control text-indent auth__password shadow-sm bg-grey-light border-0 rounded-pill fw-lighter fs-7 p-3"
                   >
                   <span

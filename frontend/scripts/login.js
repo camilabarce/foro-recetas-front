@@ -34,3 +34,53 @@ for (var i = 0; i < passwordIcon.length; ++i) {
     }
   });
 }
+
+const loginForm = document.getElementById("session_login_form");
+const registerForm = document.getElementById("user_registration_form");
+
+registerForm.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+
+  const formData = new URLSearchParams();
+  formData.append("username", registerForm.username.value);
+  formData.append("email", registerForm.email.value);
+  formData.append("password", registerForm.password.value);
+
+  const requestData = {
+    method: "POST",
+    body: formData,
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+  };
+
+  fetch("http://localhost:3000/usuarios/", requestData).then((response) => {
+    if (!response.ok) {
+      // hacer algo
+    }
+  });
+});
+
+loginForm.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+
+  const formData = new URLSearchParams();
+  formData.append("email", loginForm.email.value);
+  formData.append("password", loginForm.password.value);
+
+  const requestData = {
+    method: "POST",
+    body: formData,
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+  };
+
+  fetch("http://localhost:3000/usuarios/signin", requestData).then(
+    (response) => {
+      if (!response.ok) {
+        // hacer algo
+      }
+    }
+  );
+});
