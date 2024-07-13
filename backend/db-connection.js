@@ -1,5 +1,6 @@
 var mysql = require('mysql2');
 
+// completar con los datos de tu base de datos
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
