@@ -2,10 +2,21 @@ const express = require('express');
 const router = express.Router();
 const connection = require("./../db-connection")
 const multer = require('multer')
-const upload = multer({ dest: 'uploads/' });
+const path = require('path');
 const fs = require('fs')
 
-router.post('/nuevaReceta', upload.single('imagen'), async function (req, res, next) {
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads/');
+    },
+    filename: (req, file, cb) => {
+        cb(null, file.originalname);
+    }
+});
+
+const upload = multer({ storage: storage });
+
+router.post('/nuevaReceta', upload.single('imagen'), function (req, res, next) {
     const { titulo, subtitulo, pasos, ingredientes, idcategoria } = req.body;
     const imagen = req.file;
 
@@ -18,30 +29,31 @@ router.post('/nuevaReceta', upload.single('imagen'), async function (req, res, n
 
     const imagenPath = `/images/recetas/${imagen.originalname}`;
 
-    try {
-        // Insertar la receta en la base de datos
-        const query = `
-            INSERT INTO recetas (titulo, subtitulo, imagen, pasos, ingredientes, idcategoria) 
-            VALUES (?, ?, ?, ?, ?, ?)
-        `;
-        const values = [titulo, subtitulo, imagenPath, pasos, ingredientes, idcategoria];
-        const results = await connection.query(query, values);
+    // Insertar la receta en la base de datos
+    const query = `
+        INSERT INTO recetas (titulo, subtitulo, imagen, pasos, ingredientes, idcategoria, idusuario) 
+        VALUES (?, ?, ?, ?, ?, ?, ?)
+    `;
+    const values = [titulo, subtitulo, imagenPath, pasos, ingredientes, idcategoria, 2];
+
+    connection.query(query, values, (error, results) => {
+        if (error) {
+            console.error('Error al insertar la receta:', error);
+            return res.status(500).json({ error: 'Error al insertar la receta' });
+        }
 
         // Mover la imagen del directorio temporal a la carpeta de imágenes pública
-        fs.createReadStream(`./uploads/${imagen.filename}`)
-            .pipe(fs.createWriteStream(`./public/images/recetas/${imagen.originalname}`))
-            .on('finish', () => {
-                res.json({ message: 'Receta agregada exitosamente', id: results.insertId });
-            })
-            .on('error', (error) => {
+        const tempPath = path.join(__dirname, '../uploads', imagen.filename);
+        const targetPath = path.join(__dirname, '../public/images/recetas', imagen.originalname);
+
+        fs.rename(tempPath, targetPath, (error) => {
+            if (error) {
                 console.error('Error al mover la imagen:', error);
                 return res.status(500).json({ error: 'Error al mover la imagen' });
-            });
-
-    } catch (error) {
-        console.error('Error al insertar la receta:', error);
-        return res.status(500).json({ error: 'Error al insertar la receta' });
-    }
+            }
+            res.json({ message: 'Receta agregada exitosamente', id: results.insertId });
+        });
+    });
 });
 
 router.get('/', function (req, res, next) {
