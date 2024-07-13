@@ -80,6 +80,7 @@ loginForm.addEventListener("submit", (evt) => {
     (response) => {
       if (!response.ok) {
         // hacer algo
+        alert("Credenciales invalidas");
       }
     }
   );

@@ -4,16 +4,15 @@ var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'forerecetas'
+    database: 'fororecetas' 
 });
 
 connection.connect((err) => {
     if (err) {
-        console.error('Error connecting to the database:', err);
+        console.error('Error al conectar a la base de datos:', err);
         return;
     }
-    console.log('Connected to the database.');
+    console.log('Conexión exitosa a la base de datos.');
 });
 
 module.exports = connection;
-
