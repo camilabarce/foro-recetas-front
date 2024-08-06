@@ -8,18 +8,6 @@ Un foro de recetas donde los usuarios pueden compartir sus recetas favoritas.
 
 **Client:** HTML, CSS, Bootstrap, JavaScript
 
-**Server:** Node.js, Express.js
-
-**Database:** MySQL
-
-## Instalación
-
-```bash
-  cd backend
-  npm install 
-  npm start ó npx nodemon
-```
-
 ## Equipo
 
 - [@camilabarce](https://www.github.com/camilabarce)
