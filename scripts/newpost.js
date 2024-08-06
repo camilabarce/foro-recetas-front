@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const categoriaSelect = document.getElementById('categoriaSelect');
 
-    fetch('http://localhost:3000/categorias')
+    fetch('https://foro-recetas.up.railway.app/categorias')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error al obtener las categorías');
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     formulario.addEventListener('submit', (event) => {
         event.preventDefault();
 
-        let url = 'http://localhost:3000/recetas/nuevaReceta';
+        let url = 'https://foro-recetas.up.railway.app/recetas/nuevaReceta';
         let formData = new FormData();
         formData.append('titulo', titulo.value);
         formData.append('subtitulo', subtitulo.value);

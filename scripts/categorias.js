@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/categorias')
+fetch('https://foro-recetas.up.railway.app/categorias')
   .then(response => response.json())
   .then(categorias => {
     const categoriesContainer = document.querySelector('.categories');
@@ -6,7 +6,7 @@ fetch('http://localhost:3000/categorias')
     categorias.forEach(categoria => {
       const li = `
       <li class="categoria-container">
-        <div class="img-container" style="background-image: url('http://localhost:3000${categoria.imagen}');"></div>
+        <div class="img-container" style="background-image: url('https://foro-recetas.up.railway.app${categoria.imagen}');"></div>
         <a href="" class="text-decoration-none d-flex justify-content-center align-items-center">
           <h3 class="fs-6 fw-light">${categoria.nombre}</h3>
         </a>

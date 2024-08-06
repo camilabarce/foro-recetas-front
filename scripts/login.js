@@ -54,7 +54,7 @@ registerForm.addEventListener("submit", (evt) => {
     },
   };
 
-  fetch("http://localhost:3000/usuarios/", requestData).then((response) => {
+  fetch("https://foro-recetas.up.railway.app/usuarios/", requestData).then((response) => {
     if (!response.ok) {
       // hacer algo
     }
@@ -76,7 +76,7 @@ loginForm.addEventListener("submit", (evt) => {
     },
   };
 
-  fetch("http://localhost:3000/usuarios/signin", requestData).then(
+  fetch("https://foro-recetas.up.railway.app/usuarios/signin", requestData).then(
     (response) => {
       if (!response.ok) {
         // hacer algo

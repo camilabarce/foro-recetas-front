@@ -2,14 +2,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const contenedorTarjetas = document.querySelector('.contenedor-tarjetas');
 
     Promise.all([
-        fetch('http://localhost:3000/usuarios')
+        fetch('https://foro-recetas.up.railway.app/usuarios')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Error al obtener los usuarios');
                 }
                 return response.json();
             }),
-        fetch('http://localhost:3000/recetas')
+        fetch('https://foro-recetas.up.railway.app/recetas')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Error al obtener las recetas');
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const tarjetaHTML = `
                 <div class="card d-flex flex-row tarjeta-receta">
                     <a href="./pages/receta.html" class="align-self-center">
-                        <img src="http://localhost:3000${receta.imagen}" class="card-img-top img-receta" alt="${receta.titulo}">
+                        <img src="https://foro-recetas.up.railway.app${receta.imagen}" class="card-img-top img-receta" alt="${receta.titulo}">
                     </a>
                     <div class="card-body d-flex flex-column justify-content-around contenedor-receta-usuario">
                         <div class="receta-descripcion d-flex flex-column gap-3">
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <a href="pages/categorias.html" class="btn bg-dark-subtle rounded-5 mt-1 w-25">${receta.nombre_categoria || 'Categoría'}</a>
                         </div>
                         <div class="nav-link contenedor-usuario d-flex gap-2">
-                            <img src="http://localhost:3000${usuario.imagen}" alt="imagen del usuario">
+                            <img src="https://foro-recetas.up.railway.app${usuario.imagen}" alt="imagen del usuario">
                             <span>${usuario.nombre}</span>
                             <i class="bi bi-caret-down-fill"></i>
                         </div>
